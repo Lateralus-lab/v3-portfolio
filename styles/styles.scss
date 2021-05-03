@@ -1,5 +1,7 @@
 @import './variables.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
 html, body {
   height: 100%;
 }
@@ -61,8 +63,8 @@ img {
     padding: 3rem;
     max-width: $breakpoint_lg;
     width: 100%;
-
-    background-color: tan;
 }
 
 // Blocks
+@import './blocks/header';
+@import './blocks/socials';
