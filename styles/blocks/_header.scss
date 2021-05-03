@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.header__name {
+    width: 16rem;
+
+    font-family: 'Rammetto One', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.header__desc {
+    margin-right: 2rem;
+    padding-top: 3px;
+    max-width: 22rem;
+    width: 100%;
+
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
