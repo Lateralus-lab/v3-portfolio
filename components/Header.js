@@ -6,8 +6,8 @@ export default function Header() {
         <div className="header__name-second">Krizevski</div>
       </div>
       <div className="header__desc">
-        I'm a FrontEnd Web developer looking for an opportunity to become a
-        full-stack. I like building things for the web.
+        I'm a passionate front-end web developer focused on building beautiful
+        interfaces and expiriences.
       </div>
     </header>
   );

@@ -1,6 +1,5 @@
-@import './variables.scss';
-
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import './variables.scss';
 
 html, body {
   height: 100%;
@@ -9,7 +8,8 @@ html, body {
 body {
     margin: 0;
 
-    background-color: #333;
+    // background-color: #232E41;
+    background-color: #222831;
 
     font-family: $primary-font;
 
@@ -58,6 +58,10 @@ img {
     max-height: 100%;
 }
 
+section {
+    margin-bottom: 5rem;
+}
+
 .container {
     margin: 0 auto;
     padding: 3rem;
@@ -72,3 +76,4 @@ img {
 @import './blocks/projects';
 @import './blocks/swiper';
 @import './blocks/cards';
+@import './blocks/board';
