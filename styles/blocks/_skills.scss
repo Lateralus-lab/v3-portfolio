@@ -1,0 +1,31 @@
+.skills__stack {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills__item {
+   margin: 5px 0 5px 17px;
+   position: relative;
+
+   font-size: 14px; 
+   color: $gray-color;
+
+   &:nth-of-type(1) {
+       margin-left: 0;
+       margin-bottom: 15px;
+
+       font-size: 16px;
+       color: $primary-color;
+       font-weight: 700;
+   }
+
+   &:not(:first-child):before {
+       content: '▹';
+
+       color: $primary-color;
+
+       position: absolute;
+       top: -1px;
+       left: -15px;
+   }
+}
