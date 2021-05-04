@@ -8,7 +8,6 @@ html, body {
 body {
     margin: 0;
 
-    // background-color: #232E41;
     background-color: #222831;
 
     font-family: $primary-font;
@@ -62,12 +61,26 @@ section {
     margin-bottom: 5rem;
 }
 
+::selection {
+    color: #49a09d;
+}
+
 .container {
     margin: 0 auto;
     padding: 3rem;
     max-width: $breakpoint_lg;
     width: 100%;
 }
+
+// .external__icon {
+//     width: 20px;
+//     height: 20px;
+
+//     background-color: $primary-color;
+//     border-radius: 50%;
+
+//     fill: $primary-color;
+// }
 
 // Blocks
 @import './blocks/header';
@@ -78,3 +91,4 @@ section {
 @import './blocks/cards';
 @import './blocks/board';
 @import './blocks/skills';
+@import './blocks/footer';

@@ -4,6 +4,7 @@ import Socials from '../components/Socials';
 import Projects from '../components/Projects';
 import Lab from '../components/Lab';
 import Skills from '../components/Skills';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Projects />
       <Lab />
       <Skills />
+      <Footer />
     </Layout>
   );
 }

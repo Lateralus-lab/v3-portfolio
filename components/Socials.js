@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Twitter from './svg/twitter';
 import Linkedin from './svg/linkedin';
+import Mail from './svg/mail';
 import Github from './svg/github';
 
 export default function Socials() {
@@ -17,6 +18,13 @@ export default function Socials() {
         <Link href="#">
           <a className="socials__link">
             <Linkedin />
+          </a>
+        </Link>
+      </li>
+      <li className="socials__item">
+        <Link href="mailto:lateraluz46@protonmail.com">
+          <a className="socials__link">
+            <Mail />
           </a>
         </Link>
       </li>

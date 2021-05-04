@@ -28,7 +28,7 @@ export default function Skills() {
           <li className="skills__item">Terminal</li>
           <li className="skills__item">Git</li>
           <li className="skills__item">Gulp</li>
-          <li className="skills__item">Webpack</li>
+          <li className="skills__item">Linux</li>
           <li className="skills__item">DevTools</li>
         </ul>
       </div>

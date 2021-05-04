@@ -1,6 +1,5 @@
 .socials {
     display: flex;
-    justify-content: space-evenly;
     max-width: 220px;
     width: 100%;
     margin-bottom: 3rem;
@@ -12,7 +11,7 @@
     align-items: center;
     width: 2.25rem;
     height: 2.25rem;
-    margin-right: 2.2rem;
+    margin-right: 1rem;
     position: relative;
 
     border-radius: 50%;
@@ -38,7 +37,7 @@
     }
 
     &:hover .socials__icon {
-        fill: #232E41;
+        fill: #222831;
     }
 
     &:after {
@@ -58,6 +57,10 @@
     &:hover:after {
         animation: rotates 11s linear infinite;
         opacity: 1;
+    }
+
+    &:last-child {
+        margin-right: 0;
     }
 
 }

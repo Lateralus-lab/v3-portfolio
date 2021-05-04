@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import Image from 'next/image';
+import External from './svg/external';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
 
@@ -41,7 +43,19 @@ export default function Projects() {
               />
             </div>
             <div className="cards__content">
-              <h3 className="cards__title">Project</h3>
+              <div className="cards__top">
+                <div className="cards__top-title">
+                  <h3 className="cards__title">
+                    <Link href="#">
+                      <a className="cards__title-link">Project</a>
+                    </Link>
+                  </h3>
+                </div>
+                <div className="cards__top-icon">
+                  <External />
+                </div>
+              </div>
+
               <p>
                 Dolor impedit magnam voluptas quo nobis Eius esse explicabo
                 totam eaque eligendi Ut quisquam quas similique fuga atque
@@ -62,7 +76,18 @@ export default function Projects() {
               />
             </div>
             <div className="cards__content">
-              <h3 className="cards__title">Project</h3>
+              <div className="cards__top">
+                <div className="cards__top-title">
+                  <h3 className="cards__title">
+                    <Link href="#">
+                      <a className="cards__title-link">Project</a>
+                    </Link>
+                  </h3>
+                </div>
+                <div className="cards__top-icon">
+                  <External />
+                </div>
+              </div>
               <p>
                 Dolor impedit magnam voluptas quo nobis Eius esse explicabo
                 totam eaque eligendi Ut quisquam quas similique fuga atque
@@ -83,7 +108,18 @@ export default function Projects() {
               />
             </div>
             <div className="cards__content">
-              <h3 className="cards__title">Project</h3>
+              <div className="cards__top">
+                <div className="cards__top-title">
+                  <h3 className="cards__title">
+                    <Link href="#">
+                      <a className="cards__title-link">Project</a>
+                    </Link>
+                  </h3>
+                </div>
+                <div className="cards__top-icon">
+                  <External />
+                </div>
+              </div>
               <p>
                 Dolor impedit magnam voluptas quo nobis Eius esse explicabo
                 totam eaque eligendi Ut quisquam quas similique fuga atque
