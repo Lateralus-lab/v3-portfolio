@@ -1,11 +1,19 @@
 .about__item {
     max-width: 680px;
 
-    font-size: 14px;
+    font-size: .88rem;
     color: $gray-color;
+
+    @media(max-width: $breakpoint_md) {
+        font-size: 1rem; 
+    }
 
     &-parag {
         margin-bottom: 30px;
+
+        @media(max-width: $breakpoint_md) {
+            margin-bottom: 25px;
+        }
 
         &:last-child {
             margin-bottom: 0;

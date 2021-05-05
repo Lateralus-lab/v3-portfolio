@@ -26,6 +26,7 @@ export default function Projects() {
             },
             768: {
               slidesPerView: 2,
+              spaceBetween: 25,
             },
             576: {
               slidesPerView: 1,
@@ -35,7 +36,7 @@ export default function Projects() {
             },
           }}
           loop={true}
-          loopFillGroupWithBlank={true}
+          // loopFillGroupWithBlank={true}
         >
           <SwiperSlide className="cards__item card1">
             <div className="cards__container">

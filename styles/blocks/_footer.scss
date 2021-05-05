@@ -1,10 +1,15 @@
 .footer {
     margin-top: auto;
+    width: 100%;
 }
 
 .footer__copy {
     font-size: .85rem;
     font-weight: 500;
+
+    @media(max-width: breakpoint_md) {
+        font-size: .96rem;
+    }
 }
 
 .footer__icon {

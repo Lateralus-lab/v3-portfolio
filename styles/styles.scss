@@ -70,7 +70,10 @@ section {
     padding: 3rem;
     max-width: $breakpoint_lg;
     width: 100%;
-    position: relative;
+
+   @media(max-width: $breakpoint_md) {
+       padding: 1.5rem 1.25rem;
+   }
 }
 
 .multi-color {
@@ -88,4 +91,3 @@ section {
 @import './blocks/about';
 @import './blocks/skills';
 @import './blocks/footer';
-@import './blocks/sticky';
