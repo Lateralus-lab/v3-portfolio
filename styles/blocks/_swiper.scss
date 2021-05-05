@@ -2,14 +2,13 @@
   width: 100%;
 }
 
-// @media screen and (min-width: 640px) {
-//   .swiper-container {
-//     width: 640px;
-//   }
-// }
+.swiper-pagination {
+  top: 2px;
+  bottom: 0 !important;
+  z-index: 2 !important;
+}
 
-// @media screen and (min-width: 768px) {
-//   .swiper-container {
-//     width: 768px;
-//   }
-// }
+
+.swiper-pagination-bullet-active {
+    background-color: #49a09d !important;
+}

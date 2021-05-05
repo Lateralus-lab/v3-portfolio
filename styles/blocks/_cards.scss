@@ -2,6 +2,7 @@
      display: flex;
      justify-content: space-between;
      width: 100%;
+     max-height: 508px;
 }
 
 .cards__item {
@@ -30,7 +31,6 @@
         margin-right: 8px;
     }
 }
-
 
 .cards__title {
     margin: 10px 0 15px 0;
