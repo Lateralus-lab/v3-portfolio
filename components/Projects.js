@@ -28,7 +28,7 @@ export default function Projects() {
           <div className="cards__top-title">
             <h3 className="cards__title">
               <Link href="#">
-                <a className="cards__title-link">Project</a>
+                <a className="cards__title-link">Chat App</a>
               </Link>
             </h3>
           </div>
@@ -59,7 +59,7 @@ export default function Projects() {
           <div className="cards__top-title">
             <h3 className="cards__title">
               <Link href="#">
-                <a className="cards__title-link">Project</a>
+                <a className="cards__title-link">Taxi Ordering App</a>
               </Link>
             </h3>
           </div>
@@ -90,7 +90,38 @@ export default function Projects() {
           <div className="cards__top-title">
             <h3 className="cards__title">
               <Link href="#">
-                <a className="cards__title-link">Project</a>
+                <a className="cards__title-link">Landing Page</a>
+              </Link>
+            </h3>
+          </div>
+          <div className="cards__top-icon">
+            <External />
+          </div>
+        </div>
+        <p>
+          Dolor impedit magnam voluptas quo nobis Eius esse explicabo totam
+          eaque eligendi Ut quisquam quas similique fuga atque obcaecati{' '}
+        </p>
+      </div>
+    </div>,
+
+    <div className="cards__item">
+      <div className="cards__container">
+        <Image
+          className="cards__img"
+          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          alt="temp"
+          width={450}
+          height={550}
+          objectFit="cover"
+        />
+      </div>
+      <div className="cards__content">
+        <div className="cards__top">
+          <div className="cards__top-title">
+            <h3 className="cards__title">
+              <Link href="#">
+                <a className="cards__title-link">Weather App</a>
               </Link>
             </h3>
           </div>
@@ -122,9 +153,9 @@ export default function Projects() {
         mouseTracking
         controlsStrategy="alternative"
         disableButtonsControls
+        animationDuration={1000}
         autoPlay
         autoPlayInterval={8000}
-        animationDuration={1000}
       />
     </section>
   );

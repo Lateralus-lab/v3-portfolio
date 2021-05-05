@@ -22,7 +22,7 @@ export default function Lab() {
         <div className="board__content">
           <Link href="#">
             <a className="board__link">
-              <h3 className="board__content-title">Project</h3>
+              <h3 className="board__content-title">Reusable Components</h3>
             </a>
           </Link>
           <div className="board__content-desc">
@@ -46,7 +46,7 @@ export default function Lab() {
         <div className="board__content">
           <Link href="#">
             <a className="board__link">
-              <h3 className="board__content-title">Project</h3>
+              <h3 className="board__content-title">HTML Email</h3>
             </a>
           </Link>
           <div className="board__content-desc">
@@ -70,7 +70,7 @@ export default function Lab() {
         <div className="board__content">
           <Link href="#">
             <a className="board__link">
-              <h3 className="board__content-title">Project</h3>
+              <h3 className="board__content-title">Widgets</h3>
             </a>
           </Link>
           <div className="board__content-desc">

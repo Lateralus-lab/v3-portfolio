@@ -36,12 +36,14 @@
     margin: 10px 0 15px 0;
 
     font-family: $secondary-font;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
 .cards__title-link {
     color: $primary-color;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 .cards__content {

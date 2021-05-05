@@ -17,6 +17,10 @@ body {
     line-height: 1.35;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    @media(max-width: $breakpoint_md) {
+        background-color: white;
+    }
 }
 
 *,
