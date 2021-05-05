@@ -1,0 +1,14 @@
+.about__item {
+    max-width: 680px;
+
+    font-size: 14px;
+    color: $gray-color;
+
+    &-parag {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

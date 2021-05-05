@@ -5,7 +5,9 @@ export default function Lab() {
   return (
     <section className="lab">
       <div className="title">
-        <h2 className="title__item">Experimental Lab</h2>
+        <h2 className="title__item">
+          Exp<span className="multi-color">er</span>imental Lab
+        </h2>
       </div>
 
       <div className="board">
@@ -26,8 +28,7 @@ export default function Lab() {
           <div className="board__content-desc">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              industry.
             </p>
           </div>
         </div>
@@ -51,8 +52,7 @@ export default function Lab() {
           <div className="board__content-desc">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              industry.
             </p>
           </div>
         </div>
@@ -76,8 +76,7 @@ export default function Lab() {
           <div className="board__content-desc">
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              industry.
             </p>
           </div>
         </div>

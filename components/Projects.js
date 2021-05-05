@@ -8,7 +8,9 @@ export default function Projects() {
   return (
     <section className="projects">
       <div className="title">
-        <h2 className="title__item">Some Things I’ve Built</h2>
+        <h2 className="title__item">
+          Some Th<span className="multi-color">in</span>gs I’ve Built
+        </h2>
       </div>
 
       <div className="cards">

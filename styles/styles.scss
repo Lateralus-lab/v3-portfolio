@@ -70,17 +70,12 @@ section {
     padding: 3rem;
     max-width: $breakpoint_lg;
     width: 100%;
+    position: relative;
 }
 
-// .external__icon {
-//     width: 20px;
-//     height: 20px;
-
-//     background-color: $primary-color;
-//     border-radius: 50%;
-
-//     fill: $primary-color;
-// }
+.multi-color {
+    color: #49a09d;
+}
 
 // Blocks
 @import './blocks/header';
@@ -90,5 +85,7 @@ section {
 @import './blocks/swiper';
 @import './blocks/cards';
 @import './blocks/board';
+@import './blocks/about';
 @import './blocks/skills';
 @import './blocks/footer';
+@import './blocks/sticky';

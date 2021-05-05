@@ -2,7 +2,9 @@ export default function Skills() {
   return (
     <section className="skills">
       <div className="title">
-        <h2 className="title__item">Technologies & tools</h2>
+        <h2 className="title__item">
+          Tech<span className="multi-color">no</span>logies & Tools
+        </h2>
       </div>
 
       <div className="skills__stack">
