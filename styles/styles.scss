@@ -62,7 +62,7 @@ section {
 }
 
 ::selection {
-    color: #49a09d;
+    color: $green-color;
 }
 
 .container {
@@ -77,7 +77,11 @@ section {
 }
 
 .multi-color {
-    color: #49a09d;
+    color: $green-color;
+}
+
+.alice-carousel__dots-item.__active {
+    background-color: $green-color !important;
 }
 
 // Blocks
@@ -85,7 +89,6 @@ section {
 @import './blocks/socials';
 @import './blocks/title';
 @import './blocks/projects';
-@import './blocks/swiper';
 @import './blocks/cards';
 @import './blocks/board';
 @import './blocks/about';

@@ -1,12 +1,111 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import External from './svg/external';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper.min.css';
-import 'swiper/components/navigation/navigation.min.css';
-import 'swiper/components/pagination/pagination.min.css';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 export default function Projects() {
+  const responsive = {
+    576: { items: 1 },
+    768: { items: 2 },
+    992: { items: 3 },
+  };
+
+  const items = [
+    <div className="cards__item">
+      <div className="cards__container">
+        <Image
+          className="cards__img"
+          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          alt="temp"
+          width={450}
+          height={550}
+          objectFit="cover"
+        />
+      </div>
+      <div className="cards__content">
+        <div className="cards__top">
+          <div className="cards__top-title">
+            <h3 className="cards__title">
+              <Link href="#">
+                <a className="cards__title-link">Project</a>
+              </Link>
+            </h3>
+          </div>
+          <div className="cards__top-icon">
+            <External />
+          </div>
+        </div>
+        <p>
+          Dolor impedit magnam voluptas quo nobis Eius esse explicabo totam
+          eaque eligendi Ut quisquam quas similique fuga atque obcaecati{' '}
+        </p>
+      </div>
+    </div>,
+
+    <div className="cards__item">
+      <div className="cards__container">
+        <Image
+          className="cards__img"
+          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          alt="temp"
+          width={450}
+          height={550}
+          objectFit="cover"
+        />
+      </div>
+      <div className="cards__content">
+        <div className="cards__top">
+          <div className="cards__top-title">
+            <h3 className="cards__title">
+              <Link href="#">
+                <a className="cards__title-link">Project</a>
+              </Link>
+            </h3>
+          </div>
+          <div className="cards__top-icon">
+            <External />
+          </div>
+        </div>
+        <p>
+          Dolor impedit magnam voluptas quo nobis Eius esse explicabo totam
+          eaque eligendi Ut quisquam quas similique fuga atque obcaecati{' '}
+        </p>
+      </div>
+    </div>,
+
+    <div className="cards__item">
+      <div className="cards__container">
+        <Image
+          className="cards__img"
+          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          alt="temp"
+          width={450}
+          height={550}
+          objectFit="cover"
+        />
+      </div>
+      <div className="cards__content">
+        <div className="cards__top">
+          <div className="cards__top-title">
+            <h3 className="cards__title">
+              <Link href="#">
+                <a className="cards__title-link">Project</a>
+              </Link>
+            </h3>
+          </div>
+          <div className="cards__top-icon">
+            <External />
+          </div>
+        </div>
+        <p>
+          Dolor impedit magnam voluptas quo nobis Eius esse explicabo totam
+          eaque eligendi Ut quisquam quas similique fuga atque obcaecati{' '}
+        </p>
+      </div>
+    </div>,
+  ];
+
   return (
     <section className="projects">
       <div className="title">
@@ -15,127 +114,18 @@ export default function Projects() {
         </h2>
       </div>
 
-      <div className="cards">
-        <Swiper
-          className="MySwiper"
-          spaceBetween={30}
-          slidesPerView={3}
-          breakpoints={{
-            992: {
-              slidesPerView: 3,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 25,
-            },
-            576: {
-              slidesPerView: 1,
-            },
-            200: {
-              slidesPerView: 1,
-            },
-          }}
-          loop={true}
-          // loopFillGroupWithBlank={true}
-        >
-          <SwiperSlide className="cards__item card1">
-            <div className="cards__container">
-              <Image
-                className="cards__img"
-                src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
-                alt="temp"
-                width={450}
-                height={550}
-                objectFit="cover"
-              />
-            </div>
-            <div className="cards__content">
-              <div className="cards__top">
-                <div className="cards__top-title">
-                  <h3 className="cards__title">
-                    <Link href="#">
-                      <a className="cards__title-link">Project</a>
-                    </Link>
-                  </h3>
-                </div>
-                <div className="cards__top-icon">
-                  <External />
-                </div>
-              </div>
-
-              <p>
-                Dolor impedit magnam voluptas quo nobis Eius esse explicabo
-                totam eaque eligendi Ut quisquam quas similique fuga atque
-                obcaecati{' '}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="cards__item card2">
-            <div className="cards__container">
-              <Image
-                className="cards__img"
-                src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
-                alt="temp"
-                width={450}
-                height={550}
-                objectFit="cover"
-              />
-            </div>
-            <div className="cards__content">
-              <div className="cards__top">
-                <div className="cards__top-title">
-                  <h3 className="cards__title">
-                    <Link href="#">
-                      <a className="cards__title-link">Project</a>
-                    </Link>
-                  </h3>
-                </div>
-                <div className="cards__top-icon">
-                  <External />
-                </div>
-              </div>
-              <p>
-                Dolor impedit magnam voluptas quo nobis Eius esse explicabo
-                totam eaque eligendi Ut quisquam quas similique fuga atque
-                obcaecati{' '}
-              </p>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="cards__item card3">
-            <div className="cards__container">
-              <Image
-                className="cards__img"
-                src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
-                alt="temp"
-                width={450}
-                height={550}
-                objectFit="cover"
-              />
-            </div>
-            <div className="cards__content">
-              <div className="cards__top">
-                <div className="cards__top-title">
-                  <h3 className="cards__title">
-                    <Link href="#">
-                      <a className="cards__title-link">Project</a>
-                    </Link>
-                  </h3>
-                </div>
-                <div className="cards__top-icon">
-                  <External />
-                </div>
-              </div>
-              <p>
-                Dolor impedit magnam voluptas quo nobis Eius esse explicabo
-                totam eaque eligendi Ut quisquam quas similique fuga atque
-                obcaecati{' '}
-              </p>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
+      <AliceCarousel
+        className="cards"
+        items={items}
+        responsive={responsive}
+        infinite
+        mouseTracking
+        controlsStrategy="alternative"
+        disableButtonsControls
+        autoPlay
+        autoPlayInterval={8000}
+        animationDuration={1000}
+      />
     </section>
   );
 }
