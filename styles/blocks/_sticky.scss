@@ -6,6 +6,10 @@
     position: absolute;
     top: 20px;
     right: -350px;
+
+    @media (max-width: $breakpoint_md) {
+        display: none;
+    }
 }
 
 .sticky__span {

@@ -3,6 +3,8 @@ import Image from 'next/image';
 import External from './svg/external';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
+import 'swiper/components/navigation/navigation.min.css';
+import 'swiper/components/pagination/pagination.min.css';
 
 export default function Projects() {
   return (
@@ -32,6 +34,8 @@ export default function Projects() {
               slidesPerView: 1,
             },
           }}
+          loop={true}
+          loopFillGroupWithBlank={true}
         >
           <SwiperSlide className="cards__item card1">
             <div className="cards__container">
