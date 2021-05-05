@@ -1,6 +1,10 @@
 .header {
     display: flex;
     margin-bottom: 2rem;
+
+    @media(max-width: $breakpoint_md) {
+        flex-direction: column;
+    }
 }
 
 .header__name {
