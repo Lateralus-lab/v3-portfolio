@@ -5,10 +5,25 @@ html, body {
   height: 100%;
 }
 
+:root {
+    --bg-color: #fff;
+    --primary-color: #444452;
+    --secondary-color: #444452;
+    --reversed-color: #fff;
+    //board
+    --board-bg: #fbfbfb;
+    --board-bg: #fff;
+    --board-bg-hover: #fbfbfb;
+    //multi-color
+    --multi-color: #333;
+    //switch
+    --switch-color: #fff;
+}
+
 body {
     margin: 0;
 
-    background-color: #222831;
+    background-color: var(--bg-color);
 
     font-family: $primary-font;
 
@@ -18,9 +33,23 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    @media(max-width: $breakpoint_md) {
-        background-color: white;
-    }
+    // @media(max-width: $breakpoint_md) {
+    //     background-color: white;
+    // }
+}
+
+body.dark {
+    --bg-color: #222831;
+    --primary-color: #fff;
+    --secondary-color: #a0a0a0;
+    --reversed-color: #222831;
+    //board
+    --board-bg: #202630;
+    --board-bg-hover: #222934;
+    //multi-color
+    --multi-color: #49a09d;
+    //switch
+    --switch-color: #49a09d;
 }
 
 *,
@@ -81,7 +110,7 @@ section {
 }
 
 .multi-color {
-    color: $green-color;
+    color: var(--multi-color);
 }
 
 .alice-carousel__dots-item.__active {
@@ -90,6 +119,7 @@ section {
 
 // Blocks
 @import './blocks/header';
+@import './blocks/switch';
 @import './blocks/socials';
 @import './blocks/title';
 @import './blocks/projects';

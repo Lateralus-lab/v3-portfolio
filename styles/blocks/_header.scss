@@ -1,6 +1,11 @@
 .header {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 2rem;
+}
+
+.header-left {
+    display: flex;
 
     @media(max-width: $breakpoint_md) {
         flex-direction: column;
@@ -11,6 +16,7 @@
     width: 16rem;
 
     font-family: 'Rammetto One', cursive;
+    color: var(--primary-color);
     font-size: 2rem;
     font-weight: 400;
 }
@@ -22,6 +28,7 @@
     width: 100%;
 
     font-size: 1rem;
-    font-weight: 500;
+    color: var(--primary-color);
+    font-weight: 700;
     text-align: left;
 }

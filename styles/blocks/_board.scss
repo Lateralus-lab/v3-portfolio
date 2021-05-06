@@ -1,62 +1,85 @@
 .board {
     display: flex;
     align-items: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 15px;
     padding: 20px 10px;
     max-width: 100%;
 
-    background-color: #222831;
+    background-color: var(--board-bg);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     &:hover {
         cursor: pointer;
 
-        background-color: #202630;
+        background-color: var(--board-bg-hover);
 
     }
 }
 
 .board__item {
-    margin: 0 20px 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 20px 0 10px;
     width: 2.25rem;
     height: 2.25rem;
     position: relative;
 
-    border-radius: 50%;
 
-    transition: background .4s linear;
+    &:after {
+        content: '';
+        width: 2.55rem;
+        height: 2.55rem;
+
+        border-radius: 50%;
+
+        opacity: 0;
+        transform: scale(.6);
+        transition: all .3s linear;
+
+        position: absolute;
+    }
 }
 
-.board:hover .board__item {
-    background-color: $primary-color;
+.board:hover .board__item:after {
+    background-color: var(--primary-color);
+
+    opacity: 1;
+    transform: scale(1);
 }
 
 .board:hover .board__item .board__icon {
-    fill: #222831;
+    transition: opacity .4s linear;
+    fill: var(--reversed-color);
 }
 
 .board__icon path {
-    transition: fill .3s linear;
+    transition: fill .2s linear;
 }
 
 .board__icon {
     width: 1.6rem;
     height: 1.6rem;
 
-    fill: $primary-color;
+    fill: var(--primary-color);
 }
 
 .board__link {
     text-decoration: none;
+
+    position: relative;
+    z-index: 2;
 }
 
 .board:hover .board__link {
     color: $primary-color;
     text-decoration: underline;
+    text-decoration-color: var(--primary-color);
 }
 
 .board__content-title {
@@ -64,13 +87,14 @@
 
     font-size: 1rem;
     color: $primary-color;
+    color: var(--primary-color);
     font-weight: 700;
     text-transform: capitalize;
 }
 
 .board__content-desc {
     font-size: .88rem;
-    color: $gray-color;;
+    color: var(--secondary-color);
     line-height: 1.3;
     font-weight: 400;
 
