@@ -12,7 +12,7 @@
    position: relative;
 
    font-size: .88rem; 
-   color: $gray-color;
+   color: var(--secondary-color);
 
    @media(max-width: $breakpoint_md) {
        font-size: 1rem;
@@ -23,7 +23,7 @@
        margin-bottom: 15px;
 
        font-size: 1rem;
-       color: $primary-color;
+       color: var(--primary-color);
        font-weight: 700;
 
        @media(max-width: $breakpoint_md) {
@@ -34,7 +34,7 @@
    &:not(:first-child):before {
        content: '▹';
 
-       color: $primary-color;
+       color: var(--primary-color);
 
        position: absolute;
        top: -1px;

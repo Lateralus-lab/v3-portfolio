@@ -9,23 +9,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.3rem;
     position: relative;
 
     border-radius: 50%;
 
     &:before {
         content: '';
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
 
-        background-color: $primary-color;
+        background-color: var(--primary-color);
+
         border-radius: 50%;
 
         opacity: 0;
-        transition: all .9s linear;
+        transform: scale(.7);
+        transition: all .4s linear;
 
         position: absolute;
         z-index: -1;
@@ -33,30 +35,11 @@
 
     &:hover:before {
         opacity: 1;
-        transform: scale(0.8);
+        transform: scale(1);
     }
 
     &:hover .socials__icon {
-        fill: #222831;
-    }
-
-    &:after {
-        content: '';
-        width: inherit;
-        height: inherit;
-
-        border: 1px dashed $primary-color;
-        border-radius: 50%;
-
-        opacity: 0;
-        transition: all .9s linear;
-
-        position: absolute;
-    }
-
-    &:hover:after {
-        animation: rotates 11s linear infinite;
-        opacity: 1;
+        fill: var(--reversed-color);
     }
 
     &:last-child {
@@ -65,25 +48,14 @@
 
 }
 
-
-@keyframes rotates {
-    0% {
-        transform: scale(0.9) rotate(0deg);
-    }
-
-    100% {
-        transform: scale(0.9) rotate(360deg);
-    }
-}
-
 .socials__link {
     position: relative;
     z-index: 2;
 }
 
 .socials__icon {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.45rem;
+    height: 1.45rem;
 
-    fill: $primary-color;
+    fill: var(--primary-color);
 }
