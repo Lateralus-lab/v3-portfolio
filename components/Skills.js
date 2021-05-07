@@ -1,12 +1,6 @@
 export default function Skills() {
   return (
-    <section className="skills">
-      <div className="title">
-        <h2 className="title__item">
-          Tech<span className="multi-color">no</span>logies & Tools
-        </h2>
-      </div>
-
+    <div className="skills">
       <div className="skills__stack">
         <ul className="skills__list">
           <li className="skills__item">Languages</li>
@@ -33,7 +27,15 @@ export default function Skills() {
           <li className="skills__item">Linux</li>
           <li className="skills__item">DevTools</li>
         </ul>
+
+        <ul className="skills__list">
+          <li className="skills__item">Design Tools</li>
+          <li className="skills__item">Photoshop</li>
+          <li className="skills__item">Figma</li>
+          <li className="skills__item">XD</li>
+          <li className="skills__item">Avocode</li>
+        </ul>
       </div>
-    </section>
+    </div>
   );
 }

@@ -20,7 +20,7 @@
 
    &:nth-of-type(1) {
        margin-left: 0;
-       margin-bottom: 15px;
+       margin-bottom: 10px;
 
        font-size: 1rem;
        color: var(--primary-color);
@@ -40,4 +40,16 @@
        top: -1px;
        left: -15px;
    }
+}
+
+.skills__list {
+    margin-right: 20px;
+
+    @media(max-width: $breakpoint_sm) {
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }

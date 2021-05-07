@@ -1,6 +1,8 @@
-.about__item {
+.about__wrapper {
     max-width: 680px;
-
+    width: 100%;
+}
+.about__item {
     font-size: .88rem;
     color: var(--secondary-color);
 
@@ -13,10 +15,6 @@
 
         @media(max-width: $breakpoint_md) {
             margin-bottom: 25px;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
         }
     }
 }
