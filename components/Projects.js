@@ -19,7 +19,7 @@ export default function Projects() {
           src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
           alt="temp"
           width={450}
-          height={550}
+          height={520}
           objectFit="cover"
         />
       </div>
@@ -50,7 +50,7 @@ export default function Projects() {
           src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
           alt="temp"
           width={450}
-          height={550}
+          height={520}
           objectFit="cover"
         />
       </div>
@@ -81,7 +81,7 @@ export default function Projects() {
           src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
           alt="temp"
           width={450}
-          height={550}
+          height={520}
           objectFit="cover"
         />
       </div>
@@ -112,7 +112,7 @@ export default function Projects() {
           src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
           alt="temp"
           width={450}
-          height={550}
+          height={520}
           objectFit="cover"
         />
       </div>

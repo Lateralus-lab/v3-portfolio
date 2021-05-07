@@ -11,13 +11,14 @@ html, body {
     --secondary-color: #444452;
     --reversed-color: #fff;
     //board
-    --board-bg: #fbfbfb;
     --board-bg: #fff;
-    --board-bg-hover: #fbfbfb;
+    --board-bg-hover: #F8F9FB;
     //multi-color
-    --multi-color: #333;
+    --multi-color: #FF9193;
     //switch
     --switch-color: #fff;
+    //card
+    --card-color: #eaeaea;
 }
 
 body {
@@ -32,10 +33,6 @@ body {
     line-height: 1.35;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    // @media(max-width: $breakpoint_md) {
-    //     background-color: white;
-    // }
 }
 
 body.dark {
@@ -50,6 +47,8 @@ body.dark {
     --multi-color: #49a09d;
     //switch
     --switch-color: #49a09d;
+    //card
+    --card-color: #a0a0a0;
 }
 
 *,

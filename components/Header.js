@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MoonDark from './svg/switch/moonDark';
 import MoonWhite from './svg/switch/moonWhite';
 import SunDark from './svg/switch/sunDark';
 import SunWhite from './svg/switch/sunWhite';
 
 export default function Header() {
+  const d = new Date();
+  const hours = d.getHours();
+  const night = hours >= 18 || hours <= 6;
+
   const [toggle, setToggle] = useState(false);
 
   const handleChange = () => {
@@ -14,6 +18,13 @@ export default function Header() {
 
   const sunToggle = toggle ? <SunWhite /> : <SunDark />;
   const moonToggle = toggle ? <MoonWhite /> : <MoonDark />;
+
+  useEffect(() => {
+    if (night) {
+      setToggle(false);
+      handleChange();
+    }
+  }, []);
 
   return (
     <header className="header">
@@ -39,6 +50,7 @@ export default function Header() {
             <input
               id="switch"
               type="checkbox"
+              checked={toggle}
               onChange={() => handleChange()}
             />
             <label htmlFor="switch" id="toggle">
