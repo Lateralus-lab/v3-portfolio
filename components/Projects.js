@@ -153,9 +153,9 @@ export default function Projects() {
         mouseTracking
         controlsStrategy="alternative"
         disableButtonsControls
-        animationDuration={1000}
-        autoPlay
-        autoPlayInterval={8000}
+        // animationDuration={1000}
+        // autoPlay
+        // autoPlayInterval={8000}
       />
     </section>
   );
