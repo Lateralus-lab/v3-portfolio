@@ -5,11 +5,10 @@
 }
 
 .cards__item {
-    max-width: 280px;
+    max-width: 290px;
     width: 100%;
     margin: 0 auto;
     max-height: 500px;
-    height: 100%;
 
     background-color: #171c28;
     border-radius: 20px;
@@ -20,6 +19,8 @@
 
     &:hover {
         opacity: 1;
+
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     }
 }
 
@@ -58,7 +59,6 @@
 
     &>p {
         font-size: 14px;
-        color: $gray-color;;
         color: var(--card-color);
         line-height: 1.4;
         font-weight: 500;
@@ -67,6 +67,7 @@
 
 .cards__img {
     display: block;
+    width: 100%;
 
     border-radius: 20px;
 }

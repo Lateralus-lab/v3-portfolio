@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="cards__container">
         <Image
           className="cards__img"
-          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          src="/../public/images/cards/chat-app.jpeg"
           alt="temp"
           width={450}
           height={520}
@@ -47,7 +47,7 @@ export default function Projects() {
       <div className="cards__container">
         <Image
           className="cards__img"
-          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          src="/../public/images/cards/loft-taxi.jpeg"
           alt="temp"
           width={450}
           height={520}
@@ -78,7 +78,7 @@ export default function Projects() {
       <div className="cards__container">
         <Image
           className="cards__img"
-          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          src="/../public/images/cards/logistics.jpeg"
           alt="temp"
           width={450}
           height={520}
@@ -109,7 +109,7 @@ export default function Projects() {
       <div className="cards__container">
         <Image
           className="cards__img"
-          src="/../public/images/photo-1620037721506-fef9f052c740.jpeg"
+          src="/../public/images/cards/weather-app.jpeg"
           alt="temp"
           width={450}
           height={520}
@@ -153,9 +153,9 @@ export default function Projects() {
         mouseTracking
         controlsStrategy="alternative"
         disableButtonsControls
-        animationDuration={1000}
-        autoPlay
-        autoPlayInterval={8000}
+        // animationDuration={1000}
+        // autoPlay
+        // autoPlayInterval={8000}
       />
     </section>
   );
