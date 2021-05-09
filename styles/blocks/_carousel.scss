@@ -1,11 +1,18 @@
-.alice-carousel__stage-item {
-    width: 460px;
+.dragger {
+    display: flex;
+    width: 100%;
+    pointer-events:  all;
+
+    @media(max-width: 1340px) {
+        overflow: hidden;
+    }
+
 }
 
-.alice-carousel__wrapper {
-    height: 100% !important;
+.styles_inner__x-amJ {
+    display: flex !important;
+    width: 100%;
 }
 
-.alice-carousel__dots-item.__active {
-    background-color: var(--multi-color) !important;
-}
+// .dragger-inner {
+// }
