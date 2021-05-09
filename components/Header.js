@@ -43,7 +43,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="headr-right">
+      <div className="header-right">
         <div className="switch-wrapper">
           <div className="sun">{sunToggle}</div>
           <div className="toggle-wrapper">
