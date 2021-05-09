@@ -52,7 +52,7 @@
     transform: scale(1);
 }
 
-.board:hover .board__item .board__icon {
+.board:hover .board__link .board__icon {
     transition: opacity .4s linear;
     fill: var(--reversed-color);
 }
@@ -83,7 +83,6 @@
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
 }
-
 
 .board__content-title {
     margin-bottom: .30rem;
