@@ -3,13 +3,13 @@ import Skills from './Skills';
 export default function About() {
   return (
     <section className="about">
-      <div className="about__wrapper">
-        <div className="title">
-          <h2 className="title__item">
-            Ab<span className="multi-color">o</span>ut
-          </h2>
-        </div>
+      <div className="title">
+        <h2 className="title__item">
+          Ab<span className="multi-color">o</span>ut
+        </h2>
+      </div>
 
+      <div className="about__wrapper">
         <div className="about__item">
           <p className="about__item-parag">
             I'm currently an Engineer at Upstatement building things for the web

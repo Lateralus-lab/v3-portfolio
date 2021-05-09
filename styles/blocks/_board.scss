@@ -17,7 +17,6 @@
         cursor: pointer;
 
         background-color: var(--board-bg-hover);
-
     }
 }
 
@@ -70,17 +69,21 @@
 }
 
 .board__link {
+    display: flex;
+    align-items: center;
+
     text-decoration: none;
 
     position: relative;
     z-index: 2;
 }
 
-.board:hover .board__link {
-    color: $primary-color;
+.board:hover .board__link .board__content-title {
+    color: var(--primary-color);
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
 }
+
 
 .board__content-title {
     margin-bottom: .30rem;
@@ -93,10 +96,13 @@
 }
 
 .board__content-desc {
+    max-width: 35rem;
+
     font-size: .88rem;
     color: var(--secondary-color);
     line-height: 1.3;
     font-weight: 400;
+    text-decoration: none;
 
     @media(max-width: $breakpoint_md) {
         font-size: 1rem;

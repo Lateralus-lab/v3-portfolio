@@ -11,75 +11,83 @@ export default function Lab() {
       </div>
 
       <div className="board">
-        <div className="board__item">
-          <Link href="#">
-            <a className="board__link">
-              <Flask />
-            </a>
-          </Link>
-        </div>
+        <Link href="#">
+          <a className="board__link">
+            <div className="board__item">
+              <Link href="#">
+                <a className="board__link">
+                  <Flask />
+                </a>
+              </Link>
+            </div>
 
-        <div className="board__content">
-          <Link href="#">
-            <a className="board__link">
-              <h3 className="board__content-title">Reusable Components</h3>
-            </a>
-          </Link>
-          <div className="board__content-desc">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-        </div>
+            <div className="board__content">
+              <Link href="#">
+                <a className="board__link">
+                  <h3 className="board__content-title">Re-usable Components</h3>
+                </a>
+              </Link>
+              <div className="board__content-desc">
+                <p>
+                  A collection of common re-usable components. Created to save
+                  time given these components are often always the same.
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
       </div>
 
       <div className="board">
-        <div className="board__item">
-          <Link href="#">
-            <a className="board__link">
-              <Flask />
-            </a>
-          </Link>
-        </div>
+        <Link href="https://codepen.io/zoofoo/pen/ZEGmNEv">
+          <a className="board__link" target="_blank">
+            <div className="board__item">
+              <Link href="#">
+                <a className="board__link">
+                  <Flask />
+                </a>
+              </Link>
+            </div>
 
-        <div className="board__content">
-          <Link href="#">
-            <a className="board__link">
+            <div className="board__content">
               <h3 className="board__content-title">HTML Email</h3>
-            </a>
-          </Link>
-          <div className="board__content-desc">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-        </div>
+              <div className="board__content-desc">
+                <p>
+                  I re-created the HTML Email template with MJML framework. This
+                  template is responsive and works for most email clients.
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
       </div>
 
       <div className="board">
-        <div className="board__item">
-          <Link href="#">
-            <a className="board__link">
-              <Flask />
-            </a>
-          </Link>
-        </div>
+        <Link href="#">
+          <a className="board__link">
+            <div className="board__item">
+              <Link href="#">
+                <a className="board__link">
+                  <Flask />
+                </a>
+              </Link>
+            </div>
 
-        <div className="board__content">
-          <Link href="#">
-            <a className="board__link">
-              <h3 className="board__content-title">Widgets</h3>
-            </a>
-          </Link>
-          <div className="board__content-desc">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-        </div>
+            <div className="board__content">
+              <Link href="#">
+                <a className="board__link">
+                  <h3 className="board__content-title">Widgets</h3>
+                </a>
+              </Link>
+              <div className="board__content-desc">
+                <p>
+                  A collection of small widgets. These widgets can be
+                  implemented in any project.
+                </p>
+              </div>
+            </div>
+          </a>
+        </Link>
       </div>
     </section>
   );
