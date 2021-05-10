@@ -4,37 +4,39 @@ import Linkedin from './svg/linkedin';
 import Mail from './svg/mail';
 import Github from './svg/github';
 
+const items = [
+  {
+    link: '#',
+    icon: <Twitter />,
+    id: 1,
+  },
+  {
+    link: '#',
+    icon: <Linkedin />,
+    id: 2,
+  },
+  {
+    link: 'mailto:lateraluz46@protonmail.com',
+    icon: <Mail />,
+    id: 3,
+  },
+  {
+    link: '#',
+    icon: <Github />,
+    id: 4,
+  },
+];
+
 export default function Socials() {
   return (
     <ul className="socials">
-      <li className="socials__item">
-        <Link href="#">
-          <a className="socials__link">
-            <Twitter />
-          </a>
-        </Link>
-      </li>
-      <li className="socials__item">
-        <Link href="#">
-          <a className="socials__link">
-            <Linkedin />
-          </a>
-        </Link>
-      </li>
-      <li className="socials__item">
-        <Link href="mailto:lateraluz46@protonmail.com">
-          <a className="socials__link">
-            <Mail />
-          </a>
-        </Link>
-      </li>
-      <li className="socials__item">
-        <Link href="#">
-          <a className="socials__link">
-            <Github />
-          </a>
-        </Link>
-      </li>
+      {items.map((item) => (
+        <li className="socials__item" key={item.id}>
+          <Link href={item.link}>
+            <a className="socials__link">{item.icon}</a>
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 }

@@ -7,10 +7,10 @@
     }
 
     &-parag {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
 
         @media(max-width: $breakpoint_md) {
-            margin-bottom: 25px;
+            margin-bottom: 1.5625rem;
         }
     }
 }

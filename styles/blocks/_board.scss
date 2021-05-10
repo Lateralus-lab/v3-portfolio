@@ -1,8 +1,8 @@
 .board {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    padding: 20px 10px;
+    margin-bottom: .9375rem;
+    padding: 1.25rem .625rem;
     max-width: 100%;
 
     background-color: var(--board-bg);
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 20px 0 10px;
+    margin: 0 1.25rem 0 .625rem;
     width: 2.25rem;
     height: 2.25rem;
     position: relative;
@@ -95,7 +95,7 @@
 }
 
 .board__content-desc {
-    max-width: 35rem;
+    max-width: 37rem;
 
     font-size: .88rem;
     color: var(--secondary-color);
