@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import Dragger from 'react-physics-dragger';
 
 const items = [
@@ -5,6 +6,7 @@ const items = [
     itemClass: 'cards__btn-chatapp',
     title: 'Chat App',
     subTitle: 'Real-time chat application',
+    url: 'chat',
     id: 1,
   },
   {
@@ -28,6 +30,8 @@ const items = [
 ];
 
 export default function Projects() {
+  const router = useRouter();
+
   return (
     <section className="projects">
       <div className="title">
@@ -42,7 +46,7 @@ export default function Projects() {
             <button
               className={`cards__btn ${item.itemClass}`}
               key={item.id}
-              onClick={() => console.log(`clicked ${item.id}`)}
+              onClick={() => router.push(item.url)}
             >
               <div className="cards">
                 <div className="cards__item">

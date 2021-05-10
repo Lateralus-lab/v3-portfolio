@@ -23,6 +23,7 @@ html, body {
 
 body {
     margin: 0;
+    overflow-x: hidden;
 
     background-color: var(--bg-color);
 
@@ -112,7 +113,6 @@ section {
     color: var(--multi-color);
 }
 
-
 // Blocks
 @import './blocks/header';
 @import './blocks/switch';
@@ -123,4 +123,5 @@ section {
 @import './blocks/board';
 @import './blocks/about';
 @import './blocks/skills';
+@import './blocks/detail';
 @import './blocks/footer';
