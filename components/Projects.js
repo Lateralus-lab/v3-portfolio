@@ -11,11 +11,11 @@ export default function Projects() {
       </div>
 
       <div className="projects__item">
-        <Dragger className="dragger">
+        <Dragger className="dragger" setCursorStyles={true}>
           <div>
             <div className="cards">
               <div className="cards__item">
-                <Link href="#">
+                <Link href="https://codesandbox.io/">
                   <a className="cards__link">
                     <div className="cards__icon">
                       <svg viewBox="0 0 1129 994">
