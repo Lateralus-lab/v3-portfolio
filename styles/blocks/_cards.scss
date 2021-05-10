@@ -3,6 +3,22 @@
 
 	background-color: #292929;
 
+	&-chatapp {
+		background-color: #16212A;
+	}
+
+	&-lofttaxi {
+		background-color: #FFBF65;
+	}
+
+	&-logistics {
+		background-color: #455A98;
+	}
+
+	&-weatherapp {
+		background-color: #457563;
+	}
+
     &:hover {
         box-shadow: 0 10px 20px 10px rgba(black, .2);
     }
@@ -72,14 +88,17 @@
 
 .cards__header {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+
+	color: #fff;
 }
 
 .cards__header-title {
-	margin: 0 0 .25em;
+	margin: 0 0 .35em;
 
-	font-size: 1.2rem;
-	color: white;
+	font-family: $secondary-font;
+	font-size: 1.4rem;
 }
 
 .cards__header-meta {
@@ -87,7 +106,6 @@
 	margin: 0;
 
 	font-size: 1rem;
-	color: #999;
 }
 
 .cards__header-icon {
@@ -110,24 +128,6 @@
 .cards__header {
 	position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes fadeInScale {
   0% {

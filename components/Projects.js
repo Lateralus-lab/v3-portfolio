@@ -2,27 +2,27 @@ import Dragger from 'react-physics-dragger';
 
 const items = [
   {
-    class: 'card__one',
-    title: 'Project One',
-    subTitle: 'Subtitle One',
+    itemClass: 'cards__btn-chatapp',
+    title: 'Chat App',
+    subTitle: 'Real-time chat application',
     id: 1,
   },
   {
-    class: 'card__two',
-    title: 'Project Two',
-    subTitle: 'Subtitle Two',
+    itemClass: 'cards__btn-lofttaxi',
+    title: 'Loft Taxi',
+    subTitle: 'Taxi booking application',
     id: 2,
   },
   {
-    class: 'card__three',
-    title: 'Project Three',
-    subTitle: 'Subtitle Three',
+    itemClass: 'cards__btn-logistics',
+    title: 'Trans & Logistics',
+    subTitle: 'Multi-page website',
     id: 3,
   },
   {
-    class: 'card__four',
-    title: 'Project Four',
-    subTitle: 'Subtitle Four',
+    itemClass: 'cards__btn-weatherapp',
+    title: 'Weater App',
+    subTitle: 'Weather application',
     id: 4,
   },
 ];
@@ -40,7 +40,7 @@ export default function Projects() {
         <Dragger className="dragger" setCursorStyles={true}>
           {items.map((item) => (
             <button
-              className="cards__btn cards__btn-one"
+              className={`cards__btn ${item.itemClass}`}
               key={item.id}
               onClick={() => console.log(`clicked ${item.id}`)}
             >
@@ -79,7 +79,13 @@ export default function Projects() {
 
                     <div className="cards__header">
                       <div>
-                        <h3 className="cards__header-title">{item.title}</h3>
+                        <h3
+                          className={`cards__header-title ${item.classTitle}`}
+                        >
+                          {item.title}
+                        </h3>
+                      </div>
+                      <div>
                         <p className="cards__header-meta">{item.subTitle}</p>
                       </div>
                       <div className="cards__header-icon">
