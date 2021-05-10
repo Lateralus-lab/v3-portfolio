@@ -22,7 +22,7 @@ export default function Lab() {
             </div>
 
             <div className="board__content">
-              <h3 className="board__content-title">Re-usable Components</h3>
+              <h3 className="board__content-title">Reusable Components</h3>
               <div className="board__content-desc">
                 <p>
                   A collection of common re-usable components. Created to save
