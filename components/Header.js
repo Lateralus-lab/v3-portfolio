@@ -12,17 +12,19 @@ export default function Header() {
   const [toggle, setToggle] = useState(false);
 
   const handleChange = () => {
-    document.body.classList.toggle('dark');
     setToggle(!toggle);
+    document.body.classList.toggle('dark');
   };
 
   const sunToggle = toggle ? <SunWhite /> : <SunDark />;
   const moonToggle = toggle ? <MoonWhite /> : <MoonDark />;
 
+  console.log(toggle);
+
   useEffect(() => {
     if (night) {
-      setToggle(false);
-      handleChange();
+      document.body.classList.add('dark');
+      setToggle(true);
     }
   }, []);
 
@@ -51,7 +53,7 @@ export default function Header() {
               id="switch"
               type="checkbox"
               checked={toggle}
-              onChange={() => handleChange()}
+              onChange={handleChange}
             />
             <label htmlFor="switch" id="toggle">
               Toggle

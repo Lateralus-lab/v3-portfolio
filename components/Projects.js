@@ -1,36 +1,48 @@
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Dragger from 'react-physics-dragger';
+import Modal from '../components/Modal';
 
 const items = [
   {
     itemClass: 'cards__btn-chatapp',
     title: 'Chat App',
     subTitle: 'Real-time chat application',
-    url: 'chat',
+    url: 'chatapp',
     id: 1,
   },
   {
     itemClass: 'cards__btn-lofttaxi',
     title: 'Loft Taxi',
     subTitle: 'Taxi booking application',
+    url: 'lofttaxi',
     id: 2,
   },
   {
     itemClass: 'cards__btn-logistics',
     title: 'Trans & Logistics',
     subTitle: 'Multi-page website',
+    url: 'logistics',
     id: 3,
   },
   {
     itemClass: 'cards__btn-weatherapp',
     title: 'Weater App',
     subTitle: 'Weather application',
+    url: 'weatherapp',
     id: 4,
   },
 ];
 
 export default function Projects() {
-  const router = useRouter();
+  const rounter = useRouter();
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClick = (item) => {
+    console.log(item.id);
+    rounter.push(`${item.url}`);
+  };
 
   return (
     <section className="projects">
@@ -46,7 +58,8 @@ export default function Projects() {
             <button
               className={`cards__btn ${item.itemClass}`}
               key={item.id}
-              onClick={() => router.push(item.url)}
+              onClick={() => handleClick(item)}
+              // onClick={() => setShowModal(true)}
             >
               <div className="cards">
                 <div className="cards__item">
@@ -108,6 +121,9 @@ export default function Projects() {
           ))}
         </Dragger>
       </div>
+      <Modal show={showModal} onClose={() => setShowModal(false)}>
+        <div className="modal__left">dfd</div>
+      </Modal>
     </section>
   );
 }
