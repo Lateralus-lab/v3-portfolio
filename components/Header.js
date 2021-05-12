@@ -19,11 +19,13 @@ export default function Header() {
   const sunToggle = toggle ? <SunWhite /> : <SunDark />;
   const moonToggle = toggle ? <MoonWhite /> : <MoonDark />;
 
-  console.log(toggle);
-
   useEffect(() => {
     if (night) {
       document.body.classList.add('dark');
+      setToggle(true);
+    }
+
+    if (document.body.classList.contains('dark')) {
       setToggle(true);
     }
   }, []);

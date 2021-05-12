@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Dragger from 'react-physics-dragger';
-import Modal from '../components/Modal';
 
 const items = [
   {
@@ -37,13 +35,6 @@ const items = [
 export default function Projects() {
   const rounter = useRouter();
 
-  const [showModal, setShowModal] = useState(false);
-
-  const handleClick = (item) => {
-    console.log(item.id);
-    rounter.push(`${item.url}`);
-  };
-
   return (
     <section className="projects">
       <div className="title">
@@ -58,8 +49,7 @@ export default function Projects() {
             <button
               className={`cards__btn ${item.itemClass}`}
               key={item.id}
-              onClick={() => handleClick(item)}
-              // onClick={() => setShowModal(true)}
+              onClick={() => rounter.push(`${item.url}`)}
             >
               <div className="cards">
                 <div className="cards__item">
@@ -121,9 +111,6 @@ export default function Projects() {
           ))}
         </Dragger>
       </div>
-      <Modal show={showModal} onClose={() => setShowModal(false)}>
-        <div className="modal__left">dfd</div>
-      </Modal>
     </section>
   );
 }
