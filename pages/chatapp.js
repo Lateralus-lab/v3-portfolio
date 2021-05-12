@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Layout from '../components/Layout';
 import Back from '../components/svg/back';
+import DetailsGithub from '../components/svg/detailsGithub';
 import External from '../components/svg/external';
 
 export default function ChatPage() {
@@ -12,11 +14,16 @@ export default function ChatPage() {
       <section className="details chatapp">
         <div className="details__container">
           <div className="details__left">
-            <div
-              className="details__icon-back"
-              onClick={() => router.push('/')}
-            >
-              <Back />
+            <div className="details__top">
+              <div
+                className="details__icon-back"
+                onClick={() => router.push('/')}
+              >
+                <Back />
+              </div>
+              <div className="details__icon-back">
+                <DetailsGithub />
+              </div>
             </div>
             <Link href="#">
               <a className="details__link" target="_blank">
@@ -26,6 +33,13 @@ export default function ChatPage() {
                 </h1>
               </a>
             </Link>
+
+            <ul className="stack__list">
+              <li className="stack__item">React</li>
+              <li className="stack__item">Firebase</li>
+              <li className="stack__item">SASS</li>
+              <li className="stack__item">Formik</li>
+            </ul>
           </div>
 
           <div className="details__right">
@@ -48,14 +62,39 @@ export default function ChatPage() {
             </div>
           </div>
         </div>
-        {/* <svg className="details__triangle" viewBox="0 0 1129 994"> */}
-        {/*   <g fill="none" fillRule="nonzero" stroke="#F5F5F5" strokeWidth="41"> */}
-        {/*     <path d="M564.5 212.437L95.67 873.5h937.66L564.5 212.437z" /> */}
-        {/*     <path d="M564.5 407.47L163.638 973.5h801.724L564.5 407.47z" /> */}
-        {/*     <path d="M564.5 35.409L39.699 774.5H1089.3L564.5 35.409z" /> */}
-        {/*   </g> */}
-        {/* </svg> */}
+
+        <div className="details__bottom">
+          <Image
+            className="details__img"
+            src="/../public/images/chatapp.jpeg"
+            alt="Chat App"
+            width={1000}
+            height={800}
+          />
+        </div>
       </section>
     </Layout>
   );
+}
+
+{
+  /* <svg className="details__triangle" viewBox="0 0 1129 994"> */
+}
+{
+  /*   <g fill="none" fillRule="nonzero" stroke="#F5F5F5" strokeWidth="41"> */
+}
+{
+  /*     <path d="M564.5 212.437L95.67 873.5h937.66L564.5 212.437z" /> */
+}
+{
+  /*     <path d="M564.5 407.47L163.638 973.5h801.724L564.5 407.47z" /> */
+}
+{
+  /*     <path d="M564.5 35.409L39.699 774.5H1089.3L564.5 35.409z" /> */
+}
+{
+  /*   </g> */
+}
+{
+  /* </svg> */
 }
