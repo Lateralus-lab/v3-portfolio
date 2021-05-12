@@ -15,6 +15,18 @@
     &.chatapp {
         background-color: #16212A;
     }
+
+    &.lofttaxi {
+        background-color: #c9821f;
+    }
+
+    &.logistics {
+        background-color: #465B96;
+    }
+
+    &.weatherapp {
+        background-color: #477563;
+    }
 }
 
 .details__container {
@@ -38,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 300px;
+    max-width: 130px;
 
     @media(max-width: $breakpoint_md) {
         max-width: 100%;
@@ -154,7 +166,7 @@
     margin-right: 3rem;
     margin-bottom: 2rem;
 
-    font-size: .85rem;
+    font-size: .87rem;
 
     & > p {
         margin-bottom: 1rem;
@@ -181,4 +193,6 @@
 
 .details__img {
     margin: 0 auto;
+
+    border-radius: 10px;
 }
