@@ -6,12 +6,12 @@ import Back from '../components/svg/back';
 import DetailsGithub from '../components/svg/detailsGithub';
 import External from '../components/svg/external';
 
-export default function ChatPage() {
+export default function logisticsPage() {
   const router = useRouter();
 
   return (
     <Layout>
-      <section className="details chatapp">
+      <section className="details logistics">
         <div className="details__container">
           <div className="details__left">
             <div className="details__top">
@@ -21,7 +21,7 @@ export default function ChatPage() {
               >
                 <Back />
               </div>
-              <Link href="https://github.com/Lateralus-lab/chat-app">
+              <Link href="https://github.com/Lateralus-lab/CenterLogistic-landing-website">
                 <a target="_blank">
                   <div className="details__icon-back">
                     <DetailsGithub />
@@ -29,20 +29,20 @@ export default function ChatPage() {
                 </a>
               </Link>
             </div>
-            <Link href="https://messenger-eli.netlify.app/">
+            <Link href="https://center-logistics.netlify.app/">
               <a className="details__link" target="_blank">
                 <h1 className="details__left-title">
-                  Real-Time Chat Application
+                  A website with multiple pages - Trans &amp; Logistics
                   <External />
                 </h1>
               </a>
             </Link>
 
             <ul className="stack__list">
-              <li className="stack__item">React</li>
-              <li className="stack__item">Firebase</li>
-              <li className="stack__item">SASS</li>
-              <li className="stack__item">Formik</li>
+              <li className="stack__item">HTML</li>
+              <li className="stack__item">CSS</li>
+              <li className="stack__item">BEM</li>
+              <li className="stack__item">JavaScript</li>
             </ul>
           </div>
 
@@ -70,8 +70,8 @@ export default function ChatPage() {
         <div className="details__bottom">
           <Image
             className="details__img"
-            src="/../public/images/chatapp.jpeg"
-            alt="Chat App"
+            src="/../public/images/logistics.jpeg"
+            alt="Trans And Logistics"
             width={1000}
             height={800}
           />
