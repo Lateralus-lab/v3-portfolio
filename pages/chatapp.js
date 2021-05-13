@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../components/Animation';
 import Layout from '../components/Layout';
 import Back from '../components/svg/back';
 import DetailsGithub from '../components/svg/detailsGithub';
@@ -9,11 +11,24 @@ import External from '../components/svg/external';
 export default function ChatPage() {
   const router = useRouter();
 
+  const transition = { duration: 0.9, ease: [0.43, 0.13, 0.23, 0.96] };
+
   return (
     <Layout>
-      <section className="details chatapp">
+      <motion.section
+        className="details chatapp"
+        exit="exit"
+        variants={pageAnimation}
+        initial="exit"
+        animate="show"
+      >
         <div className="details__container">
-          <div className="details__left">
+          <motion.div
+            className="details__left"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+          >
             <div className="details__top">
               <div
                 className="details__icon-back"
@@ -44,7 +59,7 @@ export default function ChatPage() {
               <li className="stack__item">SASS</li>
               <li className="stack__item">Formik</li>
             </ul>
-          </div>
+          </motion.div>
 
           <div className="details__right">
             <div className="details__right-parag">
@@ -76,7 +91,7 @@ export default function ChatPage() {
             height={800}
           />
         </div>
-      </section>
+      </motion.section>
     </Layout>
   );
 }

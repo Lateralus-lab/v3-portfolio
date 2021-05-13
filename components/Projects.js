@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import Dragger from 'react-physics-dragger';
 
@@ -35,6 +36,8 @@ const items = [
 export default function Projects() {
   const rounter = useRouter();
 
+  const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+
   return (
     <section className="projects">
       <div className="title">
@@ -46,10 +49,12 @@ export default function Projects() {
       <div className="projects__item">
         <Dragger className="dragger" setCursorStyles={true}>
           {items.map((item) => (
-            <button
+            <motion.button
               className={`cards__btn ${item.itemClass}`}
               key={item.id}
               onClick={() => rounter.push(`${item.url}`)}
+              whileHover={{ scale: 1.1 }}
+              transition={transition}
             >
               <div className="cards">
                 <div className="cards__item">
@@ -107,7 +112,7 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </button>
+            </motion.button>
           ))}
         </Dragger>
       </div>
