@@ -1,10 +1,10 @@
 import { AnimatePresence } from 'framer-motion';
 import '../styles/styles.scss';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} />
+      <Component {...pageProps} key={router.route} />
     </AnimatePresence>
   );
 }

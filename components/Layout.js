@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import { motion } from 'framer-motion';
 
 export default function Layout({ title, keywords, description, children }) {
-  const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
-
   return (
     <div>
       <Head>
@@ -13,13 +10,7 @@ export default function Layout({ title, keywords, description, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <motion.main
-        className="container"
-        exit={{ opacity: 0 }}
-        transition={transition}
-      >
-        {children}
-      </motion.main>
+      <main className="container">{children}</main>
     </div>
   );
 }

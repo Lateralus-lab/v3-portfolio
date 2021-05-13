@@ -11,8 +11,6 @@ import External from '../components/svg/external';
 export default function ChatPage() {
   const router = useRouter();
 
-  const transition = { duration: 0.9, ease: [0.43, 0.13, 0.23, 0.96] };
-
   return (
     <Layout>
       <motion.section
@@ -23,12 +21,7 @@ export default function ChatPage() {
         animate="show"
       >
         <div className="details__container">
-          <motion.div
-            className="details__left"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-          >
+          <motion.div className="details__left">
             <div className="details__top">
               <div
                 className="details__icon-back"

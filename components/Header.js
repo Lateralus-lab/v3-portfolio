@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import MoonDark from './svg/switch/moonDark';
 import MoonWhite from './svg/switch/moonWhite';
 import SunDark from './svg/switch/sunDark';
@@ -33,14 +34,19 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        <div className="header__name">
+        <motion.div
+          className="header__name"
+          initial={{ scaleY: 0 }}
+          animate={{ scaleY: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="header__name-first">
             El<span className="multi-color">i</span>
           </div>
           <div className="header__name-second">
             <span className="multi-color">Kri</span>zevski
           </div>
-        </div>
+        </motion.div>
         <div className="header__desc">
           I'm a passionate front-end web developer focused on building beautiful
           interfaces and expiriences.
