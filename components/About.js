@@ -1,13 +1,18 @@
+import { motion } from 'framer-motion';
 import Skills from './Skills';
 
 export default function About() {
   return (
     <section className="about">
-      <div className="title">
+      <motion.div
+        className="title"
+        animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+        initial={{ opacity: 0, y: 40 }}
+      >
         <h2 className="title__item">
           Ab<span className="multi-color">o</span>ut
         </h2>
-      </div>
+      </motion.div>
 
       <div className="about__wrapper">
         <div className="about__item">

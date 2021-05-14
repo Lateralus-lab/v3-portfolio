@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import Dragger from 'react-physics-dragger';
 
@@ -6,7 +7,7 @@ const items = [
     itemClass: 'cards__btn-chatapp',
     title: 'Chat App',
     subTitle: 'Real-time chat application',
-    url: 'chatapp',
+    url: 'chat',
     id: 1,
   },
   {
@@ -27,7 +28,7 @@ const items = [
     itemClass: 'cards__btn-weatherapp',
     title: 'Weater App',
     subTitle: 'Weather application',
-    url: 'weatherapp',
+    url: 'weather',
     id: 4,
   },
 ];
@@ -35,21 +36,29 @@ const items = [
 export default function Projects() {
   const rounter = useRouter();
 
+  const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+
   return (
     <section className="projects">
-      <div className="title">
+      <motion.div
+        className="title"
+        animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+        initial={{ opacity: 0, y: 40 }}
+      >
         <h2 className="title__item">
           Some Th<span className="multi-color">in</span>gs I’ve Built
         </h2>
-      </div>
+      </motion.div>
 
       <div className="projects__item">
         <Dragger className="dragger" setCursorStyles={true}>
           {items.map((item) => (
-            <button
+            <motion.button
               className={`cards__btn ${item.itemClass}`}
               key={item.id}
               onClick={() => rounter.push(`${item.url}`)}
+              whileHover={{ scale: 1.1 }}
+              transition={transition}
             >
               <div className="cards">
                 <div className="cards__item">
@@ -107,7 +116,7 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-            </button>
+            </motion.button>
           ))}
         </Dragger>
       </div>

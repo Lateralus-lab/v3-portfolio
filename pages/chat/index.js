@@ -1,19 +1,32 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
-import Back from '../components/svg/back';
-import DetailsGithub from '../components/svg/detailsGithub';
-import External from '../components/svg/external';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../components/Animation';
+import Layout from '../../components/Layout';
+import Back from '../../components/svg/back';
+import DetailsGithub from '../../components/svg/detailsGithub';
+import External from '../../components/svg/external';
 
-export default function LofttaxiPage() {
+export default function ChatPage() {
   const router = useRouter();
 
   return (
     <Layout>
-      <section className="details lofttaxi">
+      <motion.section
+        className="details chatapp"
+        exit="exit"
+        variants={pageAnimation}
+        initial="exit"
+        animate="show"
+      >
         <div className="details__container">
-          <div className="details__left">
+          <motion.div
+            className="details__left"
+            initial={{ opacity: 0, x: -800 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
+          >
             <div className="details__top">
               <div
                 className="details__icon-back"
@@ -21,7 +34,7 @@ export default function LofttaxiPage() {
               >
                 <Back />
               </div>
-              <Link href="https://github.com/Lateralus-lab/loft-taxi">
+              <Link href="https://github.com/Lateralus-lab/chat-app">
                 <a target="_blank">
                   <div className="details__icon-back">
                     <DetailsGithub />
@@ -29,26 +42,23 @@ export default function LofttaxiPage() {
                 </a>
               </Link>
             </div>
-            <Link href="https://loft-taxi.netlify.app/">
+            <Link href="https://messenger-eli.netlify.app/">
               <a className="details__link" target="_blank">
                 <h1 className="details__left-title">
-                  Taxi Booking Application - LoftTaxi
+                  Real-Time Chat Application
                   <External />
                 </h1>
               </a>
             </Link>
 
             <ul className="stack__list">
-              <li className="stack__item">React</li>
-              <li className="stack__item">Rudux</li>
-              <li className="stack__item">Redux Saga</li>
-              <li className="stack__item">React Router</li>
-              <li className="stack__item">React Hook Form</li>
-              <li className="stack__item">MapboxGL</li>
-              <li className="stack__item">SASS</li>
-              <li className="stack__item">Material UI</li>
+              {['React', 'Firebase', 'SASS', 'Formik'].map((skill, i) => (
+                <li className="stack__item" key={i}>
+                  {skill}
+                </li>
+              ))}
             </ul>
-          </div>
+          </motion.div>
 
           <div className="details__right">
             <div className="details__right-parag">
@@ -71,16 +81,21 @@ export default function LofttaxiPage() {
           </div>
         </div>
 
-        <div className="details__bottom">
+        <motion.div
+          className="details__bottom"
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.9 }}
+        >
           <Image
             className="details__img"
-            src="/../public/images/lofttaxi.jpeg"
-            alt="LoftTaxi"
+            src="/../public/images/chatapp.jpeg"
+            alt="Chat App"
             width={1000}
             height={800}
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </Layout>
   );
 }

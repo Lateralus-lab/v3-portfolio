@@ -1,19 +1,32 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
-import Back from '../components/svg/back';
-import DetailsGithub from '../components/svg/detailsGithub';
-import External from '../components/svg/external';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../components/Animation';
+import Layout from '../../components/Layout';
+import Back from '../../components/svg/back';
+import DetailsGithub from '../../components/svg/detailsGithub';
+import External from '../../components/svg/external';
 
-export default function ChatPage() {
+export default function logisticsPage() {
   const router = useRouter();
 
   return (
     <Layout>
-      <section className="details chatapp">
+      <motion.section
+        className="details logistics"
+        exit="exit"
+        variants={pageAnimation}
+        initial="exit"
+        animate="show"
+      >
         <div className="details__container">
-          <div className="details__left">
+          <motion.div
+            className="details__left"
+            initial={{ opacity: 0, x: -800 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
+          >
             <div className="details__top">
               <div
                 className="details__icon-back"
@@ -21,7 +34,7 @@ export default function ChatPage() {
               >
                 <Back />
               </div>
-              <Link href="https://github.com/Lateralus-lab/chat-app">
+              <Link href="https://github.com/Lateralus-lab/CenterLogistic-landing-website">
                 <a target="_blank">
                   <div className="details__icon-back">
                     <DetailsGithub />
@@ -29,22 +42,23 @@ export default function ChatPage() {
                 </a>
               </Link>
             </div>
-            <Link href="https://messenger-eli.netlify.app/">
+            <Link href="https://center-logistics.netlify.app/">
               <a className="details__link" target="_blank">
                 <h1 className="details__left-title">
-                  Real-Time Chat Application
+                  A website with multiple pages - Trans &amp; Logistics
                   <External />
                 </h1>
               </a>
             </Link>
 
             <ul className="stack__list">
-              <li className="stack__item">React</li>
-              <li className="stack__item">Firebase</li>
-              <li className="stack__item">SASS</li>
-              <li className="stack__item">Formik</li>
+              {['HTML', 'CSS', 'BEM', 'JavaScript'].map((skill, i) => (
+                <li className="stack__item" key={i}>
+                  {skill}
+                </li>
+              ))}
             </ul>
-          </div>
+          </motion.div>
 
           <div className="details__right">
             <div className="details__right-parag">
@@ -67,16 +81,21 @@ export default function ChatPage() {
           </div>
         </div>
 
-        <div className="details__bottom">
+        <motion.div
+          className="details__bottom"
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.9 }}
+        >
           <Image
             className="details__img"
-            src="/../public/images/chatapp.jpeg"
-            alt="Chat App"
+            src="/../public/images/logistics.jpeg"
+            alt="Trans And Logistics"
             width={1000}
             height={800}
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </Layout>
   );
 }
