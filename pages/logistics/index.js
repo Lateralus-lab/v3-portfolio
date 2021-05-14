@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
-import Back from '../components/svg/back';
-import DetailsGithub from '../components/svg/detailsGithub';
-import External from '../components/svg/external';
+import Layout from '../../components/Layout';
+import Back from '../../components/svg/back';
+import DetailsGithub from '../../components/svg/detailsGithub';
+import External from '../../components/svg/external';
 
-export default function WeatherappPage() {
+export default function logisticsPage() {
   const router = useRouter();
 
   return (
     <Layout>
-      <section className="details weatherapp">
+      <section className="details logistics">
         <div className="details__container">
           <div className="details__left">
             <div className="details__top">
@@ -21,7 +21,7 @@ export default function WeatherappPage() {
               >
                 <Back />
               </div>
-              <Link href="https://github.com/Lateralus-lab/weather-app">
+              <Link href="https://github.com/Lateralus-lab/CenterLogistic-landing-website">
                 <a target="_blank">
                   <div className="details__icon-back">
                     <DetailsGithub />
@@ -29,10 +29,10 @@ export default function WeatherappPage() {
                 </a>
               </Link>
             </div>
-            <Link href="https://weather-app2203.netlify.app/">
+            <Link href="https://center-logistics.netlify.app/">
               <a className="details__link" target="_blank">
                 <h1 className="details__left-title">
-                  Weather Application
+                  A website with multiple pages - Trans &amp; Logistics
                   <External />
                 </h1>
               </a>
@@ -41,8 +41,8 @@ export default function WeatherappPage() {
             <ul className="stack__list">
               <li className="stack__item">HTML</li>
               <li className="stack__item">CSS</li>
+              <li className="stack__item">BEM</li>
               <li className="stack__item">JavaScript</li>
-              <li className="stack__item">API</li>
             </ul>
           </div>
 
@@ -70,8 +70,8 @@ export default function WeatherappPage() {
         <div className="details__bottom">
           <Image
             className="details__img"
-            src="/../public/images/weatherapp.jpeg"
-            alt="Weather App"
+            src="/../public/images/logistics.jpeg"
+            alt="Trans And Logistics"
             width={1000}
             height={800}
           />

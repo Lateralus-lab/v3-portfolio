@@ -1,27 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { motion } from 'framer-motion';
-import { pageAnimation } from '../components/Animation';
-import Layout from '../components/Layout';
-import Back from '../components/svg/back';
-import DetailsGithub from '../components/svg/detailsGithub';
-import External from '../components/svg/external';
+import Layout from '../../components/Layout';
+import Back from '../../components/svg/back';
+import DetailsGithub from '../../components/svg/detailsGithub';
+import External from '../../components/svg/external';
 
-export default function ChatPage() {
+export default function WeatherappPage() {
   const router = useRouter();
 
   return (
     <Layout>
-      <motion.section
-        className="details chatapp"
-        exit="exit"
-        variants={pageAnimation}
-        initial="exit"
-        animate="show"
-      >
+      <section className="details weatherapp">
         <div className="details__container">
-          <motion.div className="details__left">
+          <div className="details__left">
             <div className="details__top">
               <div
                 className="details__icon-back"
@@ -29,7 +21,7 @@ export default function ChatPage() {
               >
                 <Back />
               </div>
-              <Link href="https://github.com/Lateralus-lab/chat-app">
+              <Link href="https://github.com/Lateralus-lab/weather-app">
                 <a target="_blank">
                   <div className="details__icon-back">
                     <DetailsGithub />
@@ -37,22 +29,22 @@ export default function ChatPage() {
                 </a>
               </Link>
             </div>
-            <Link href="https://messenger-eli.netlify.app/">
+            <Link href="https://weather-app2203.netlify.app/">
               <a className="details__link" target="_blank">
                 <h1 className="details__left-title">
-                  Real-Time Chat Application
+                  Weather Application
                   <External />
                 </h1>
               </a>
             </Link>
 
             <ul className="stack__list">
-              <li className="stack__item">React</li>
-              <li className="stack__item">Firebase</li>
-              <li className="stack__item">SASS</li>
-              <li className="stack__item">Formik</li>
+              <li className="stack__item">HTML</li>
+              <li className="stack__item">CSS</li>
+              <li className="stack__item">JavaScript</li>
+              <li className="stack__item">API</li>
             </ul>
-          </motion.div>
+          </div>
 
           <div className="details__right">
             <div className="details__right-parag">
@@ -78,13 +70,13 @@ export default function ChatPage() {
         <div className="details__bottom">
           <Image
             className="details__img"
-            src="/../public/images/chatapp.jpeg"
-            alt="Chat App"
+            src="/../public/images/weatherapp.jpeg"
+            alt="Weather App"
             width={1000}
             height={800}
           />
         </div>
-      </motion.section>
+      </section>
     </Layout>
   );
 }

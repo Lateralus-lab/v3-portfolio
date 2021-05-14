@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Flask from './svg/flask';
 
@@ -28,11 +29,15 @@ const items = [
 export default function Lab() {
   return (
     <section className="lab">
-      <div className="title">
+      <motion.div
+        className="title"
+        animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+        initial={{ opacity: 0, y: 40 }}
+      >
         <h2 className="title__item">
           Exp<span className="multi-color">er</span>imental Lab
         </h2>
-      </div>
+      </motion.div>
 
       {items.map((item) => (
         <div className="board" key={item.id}>

@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
-import Back from '../components/svg/back';
-import DetailsGithub from '../components/svg/detailsGithub';
-import External from '../components/svg/external';
+import Layout from '../../components/Layout';
+import Back from '../../components/svg/back';
+import DetailsGithub from '../../components/svg/detailsGithub';
+import External from '../../components/svg/external';
 
 export default function LofttaxiPage() {
   const router = useRouter();

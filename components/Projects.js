@@ -7,7 +7,7 @@ const items = [
     itemClass: 'cards__btn-chatapp',
     title: 'Chat App',
     subTitle: 'Real-time chat application',
-    url: 'chatapp',
+    url: 'chat',
     id: 1,
   },
   {
@@ -28,7 +28,7 @@ const items = [
     itemClass: 'cards__btn-weatherapp',
     title: 'Weater App',
     subTitle: 'Weather application',
-    url: 'weatherapp',
+    url: 'weather',
     id: 4,
   },
 ];
@@ -40,11 +40,15 @@ export default function Projects() {
 
   return (
     <section className="projects">
-      <div className="title">
+      <motion.div
+        className="title"
+        animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+        initial={{ opacity: 0, y: 40 }}
+      >
         <h2 className="title__item">
           Some Th<span className="multi-color">in</span>gs I’ve Built
         </h2>
-      </div>
+      </motion.div>
 
       <div className="projects__item">
         <Dragger className="dragger" setCursorStyles={true}>
