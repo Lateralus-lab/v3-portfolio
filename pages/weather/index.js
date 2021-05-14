@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../components/Animation';
 import Layout from '../../components/Layout';
 import Back from '../../components/svg/back';
 import DetailsGithub from '../../components/svg/detailsGithub';
@@ -11,9 +13,20 @@ export default function WeatherappPage() {
 
   return (
     <Layout>
-      <section className="details weatherapp">
+      <motion.section
+        className="details weatherapp"
+        exit="exit"
+        variants={pageAnimation}
+        initial="exit"
+        animate="show"
+      >
         <div className="details__container">
-          <div className="details__left">
+          <motion.div
+            className="details__left"
+            initial={{ opacity: 0, x: -800 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
+          >
             <div className="details__top">
               <div
                 className="details__icon-back"
@@ -39,12 +52,13 @@ export default function WeatherappPage() {
             </Link>
 
             <ul className="stack__list">
-              <li className="stack__item">HTML</li>
-              <li className="stack__item">CSS</li>
-              <li className="stack__item">JavaScript</li>
-              <li className="stack__item">API</li>
+              {['HTML', 'CSS', 'JavaScript', 'API'].map((skill, i) => (
+                <li className="stack__item" key={i}>
+                  {skill}
+                </li>
+              ))}
             </ul>
-          </div>
+          </motion.div>
 
           <div className="details__right">
             <div className="details__right-parag">
@@ -67,7 +81,12 @@ export default function WeatherappPage() {
           </div>
         </div>
 
-        <div className="details__bottom">
+        <motion.div
+          className="details__bottom"
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.9 }}
+        >
           <Image
             className="details__img"
             src="/../public/images/weatherapp.jpeg"
@@ -75,8 +94,8 @@ export default function WeatherappPage() {
             width={1000}
             height={800}
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </Layout>
   );
 }

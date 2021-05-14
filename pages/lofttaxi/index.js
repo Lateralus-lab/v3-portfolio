@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../components/Animation';
 import Layout from '../../components/Layout';
 import Back from '../../components/svg/back';
 import DetailsGithub from '../../components/svg/detailsGithub';
@@ -11,9 +13,20 @@ export default function LofttaxiPage() {
 
   return (
     <Layout>
-      <section className="details lofttaxi">
+      <motion.section
+        className="details lofttaxi"
+        exit="exit"
+        variants={pageAnimation}
+        initial="exit"
+        animate="show"
+      >
         <div className="details__container">
-          <div className="details__left">
+          <motion.div
+            className="details__left"
+            initial={{ opacity: 0, x: -800 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
+          >
             <div className="details__top">
               <div
                 className="details__icon-back"
@@ -39,16 +52,22 @@ export default function LofttaxiPage() {
             </Link>
 
             <ul className="stack__list">
-              <li className="stack__item">React</li>
-              <li className="stack__item">Rudux</li>
-              <li className="stack__item">Redux Saga</li>
-              <li className="stack__item">React Router</li>
-              <li className="stack__item">React Hook Form</li>
-              <li className="stack__item">MapboxGL</li>
-              <li className="stack__item">SASS</li>
-              <li className="stack__item">Material UI</li>
+              {[
+                'React',
+                'Redux',
+                'Redux Saga',
+                'React Router',
+                'React Hook Form',
+                'MapboxGL',
+                'SASS',
+                'Material UI',
+              ].map((skill, i) => (
+                <li className="stack__item" key={i}>
+                  {skill}
+                </li>
+              ))}
             </ul>
-          </div>
+          </motion.div>
 
           <div className="details__right">
             <div className="details__right-parag">
@@ -71,7 +90,12 @@ export default function LofttaxiPage() {
           </div>
         </div>
 
-        <div className="details__bottom">
+        <motion.div
+          className="details__bottom"
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.9 }}
+        >
           <Image
             className="details__img"
             src="/../public/images/lofttaxi.jpeg"
@@ -79,8 +103,8 @@ export default function LofttaxiPage() {
             width={1000}
             height={800}
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </Layout>
   );
 }

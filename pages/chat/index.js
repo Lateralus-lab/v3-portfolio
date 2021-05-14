@@ -52,10 +52,11 @@ export default function ChatPage() {
             </Link>
 
             <ul className="stack__list">
-              <li className="stack__item">React</li>
-              <li className="stack__item">Firebase</li>
-              <li className="stack__item">SASS</li>
-              <li className="stack__item">Formik</li>
+              {['React', 'Firebase', 'SASS', 'Formik'].map((skill, i) => (
+                <li className="stack__item" key={i}>
+                  {skill}
+                </li>
+              ))}
             </ul>
           </motion.div>
 
