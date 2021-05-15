@@ -20,7 +20,7 @@ const items = [
   {
     itemClass: 'cards__btn-logistics',
     title: 'Trans & Logistics',
-    subTitle: 'Multi-page website',
+    subTitle: 'A website with multiple pages',
     url: 'logistics',
     id: 3,
   },
@@ -56,7 +56,9 @@ export default function Projects() {
             <motion.button
               className={`cards__btn ${item.itemClass}`}
               key={item.id}
-              onClick={() => rounter.push(`${item.url}`)}
+              onClick={() => {
+                rounter.push(`${item.url}`);
+              }}
               whileHover={{ scale: 1.1 }}
               transition={transition}
             >

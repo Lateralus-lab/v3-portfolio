@@ -72,19 +72,16 @@ export default function LofttaxiPage() {
           <div className="details__right">
             <div className="details__right-parag">
               <p>
-                I'm currently an Engineer at Upstatement building things for the
-                web with some awesome people. I recently graduated from
-                Northeastern University after completing three awesome six-month
-                co-ops at MullenLowe U.S., Starry, and Apple Music.
+                LoftTaxi - a taxi booking application I built with React and
+                Redux/Redux Saga. This application uses a foreign API to get
+                route directions as well as MapboxGL to render interactive map.
               </p>
 
               <p>
-                As a software engineer, I enjoy bridging the gap between
-                engineering and design — combining my technical knowledge with
-                my keen eye for design to create a beautiful product. My goal is
-                to always build applications that are scalable and efficient
-                under the hood while providing engaging, pixel-perfect user
-                experiences.
+                The application also includes a user authorization/registration
+                system allowing users to sign in with accounts and book a taxi.
+                To style this application, I mostly used SASS and, to save time,
+                some MaterialUI components.
               </p>
             </div>
           </div>

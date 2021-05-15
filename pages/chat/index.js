@@ -63,19 +63,22 @@ export default function ChatPage() {
           <div className="details__right">
             <div className="details__right-parag">
               <p>
-                I'm currently an Engineer at Upstatement building things for the
-                web with some awesome people. I recently graduated from
-                Northeastern University after completing three awesome six-month
-                co-ops at MullenLowe U.S., Starry, and Apple Music.
+                As you might have probably guessed, this is a chat application I
+                built with React and Firebase. It was an enjoyable project to
+                work with as I worked with Firebase/Firestore for the first
+                time, and I was learning a lot while building it.
               </p>
 
               <p>
-                As a software engineer, I enjoy bridging the gap between
-                engineering and design — combining my technical knowledge with
-                my keen eye for design to create a beautiful product. My goal is
-                to always build applications that are scalable and efficient
-                under the hood while providing engaging, pixel-perfect user
-                experiences.
+                Since Firebase doesn't provide a presence system for online
+                users out of the box - I had to look for a way around it. I
+                implemented a counter for messages which display all active
+                users based on unique users that sent a message.
+              </p>
+
+              <p>
+                The application also has a registration and authorization system
+                as well as Formik for form validation.
               </p>
             </div>
           </div>

@@ -49,7 +49,7 @@ export default function Header() {
         </motion.div>
         <div className="header__desc">
           I'm a passionate front-end web developer focused on building beautiful
-          interfaces and expiriences.
+          interfaces and experiences.
         </div>
       </div>
 

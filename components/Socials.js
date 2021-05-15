@@ -6,7 +6,7 @@ import Github from './svg/github';
 
 const items = [
   {
-    link: '#',
+    link: 'https://twitter.com/thelateraluz',
     icon: <Twitter />,
     id: 1,
   },
@@ -21,7 +21,7 @@ const items = [
     id: 3,
   },
   {
-    link: '#',
+    link: 'https://github.com/Lateralus-lab',
     icon: <Github />,
     id: 4,
   },
@@ -33,7 +33,9 @@ export default function Socials() {
       {items.map((item) => (
         <li className="socials__item" key={item.id}>
           <Link href={item.link}>
-            <a className="socials__link">{item.icon}</a>
+            <a className="socials__link" target="_blank">
+              {item.icon}
+            </a>
           </Link>
         </li>
       ))}

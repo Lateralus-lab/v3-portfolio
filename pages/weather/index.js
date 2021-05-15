@@ -63,19 +63,15 @@ export default function WeatherappPage() {
           <div className="details__right">
             <div className="details__right-parag">
               <p>
-                I'm currently an Engineer at Upstatement building things for the
-                web with some awesome people. I recently graduated from
-                Northeastern University after completing three awesome six-month
-                co-ops at MullenLowe U.S., Starry, and Apple Music.
+                This is a simple weather application I built with HTML/CSS and
+                JavaScript. I used OpenWeatherMap API to get the weather for any
+                city you request.
               </p>
 
               <p>
-                As a software engineer, I enjoy bridging the gap between
-                engineering and design — combining my technical knowledge with
-                my keen eye for design to create a beautiful product. My goal is
-                to always build applications that are scalable and efficient
-                under the hood while providing engaging, pixel-perfect user
-                experiences.
+                It was one of the first projects I built, and I decided to
+                include it in my portfolio to demonstrate that I'm constantly
+                learning and improving.
               </p>
             </div>
           </div>

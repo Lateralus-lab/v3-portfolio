@@ -13,14 +13,14 @@ const items = [
   {
     title: 'HTML Email',
     text:
-      'A collection of common re-usable components. Created to save time given these components are often always the same.',
+      'I re-created an HTML Email template from boohooMAN with the MJML framework. The template is mobile responsive and works on popular email clients.',
     link: 'https://codepen.io/zoofoo/pen/ZEGmNEv',
     id: 2,
   },
   {
     title: 'Widgets',
     text:
-      'A collection of small widgets. These widgets can be implemented in any profect',
+      'A collection of awesome widgets. These widgets are built with Javascript and can easily be integrated into any project.',
     link: '#',
     id: 3,
   },

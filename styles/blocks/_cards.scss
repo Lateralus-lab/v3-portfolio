@@ -1,6 +1,7 @@
 .cards__btn {
 	margin-right: 1.875rem;
 
+
 	background-color: #292929;
 
 	&-chatapp {
@@ -29,9 +30,6 @@
 		width: 20rem;
 
     transition: all .3s ease-in-out;
-		pointer-events: none;
-		cursor: pointer;
-
 
 		@media(max-width: $breakpoint_md) {
 			width: 17.8rem;
