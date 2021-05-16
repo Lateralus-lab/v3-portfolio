@@ -7,7 +7,7 @@ const items = [
     title: 'Reusable Components',
     text:
       'A collection of common re-usable components. Created to save time given these components are often always the same.',
-    link: '#',
+    link: 'https://codepen.io/collection/gYYOMW',
     id: 1,
   },
   {
@@ -20,8 +20,8 @@ const items = [
   {
     title: 'Widgets',
     text:
-      'A collection of awesome widgets. These widgets are built with Javascript and can easily be integrated into any project.',
-    link: '#',
+      'A collection of widgets. These widgets are built with Javascript and can easily be integrated into any project.',
+    link: 'https://codepen.io/collection/dbbPPv',
     id: 3,
   },
 ];
