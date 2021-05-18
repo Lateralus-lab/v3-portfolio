@@ -14,10 +14,6 @@
    font-size: .88rem; 
    color: var(--secondary-color);
 
-   @media(max-width: $breakpoint_md) {
-       font-size: 1rem;
-   }
-
    &:nth-of-type(1) {
        margin-left: 0;
        margin-bottom: 10px;
@@ -25,10 +21,6 @@
        font-size: 1rem;
        color: var(--primary-color);
        font-weight: 700;
-
-       @media(max-width: $breakpoint_md) {
-           font-size: 1.2rem;
-       }
    }
 
    &:not(:first-child):before {
@@ -47,8 +39,6 @@
 
     @media(max-width: $breakpoint_sm) {
         margin-bottom: 8px;
-
-        font-size: .88rem;
 
         &:last-child {
             margin-bottom: 0;
