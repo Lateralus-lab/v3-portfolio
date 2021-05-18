@@ -95,7 +95,7 @@ export default function LofttaxiPage() {
         >
           <Image
             className="details__img"
-            src="/../public/images/lofttaxi.jpeg"
+            src="/images/lofttaxi.jpeg"
             alt="LoftTaxi"
             width={1000}
             height={800}

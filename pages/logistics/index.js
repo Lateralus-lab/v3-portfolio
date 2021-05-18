@@ -86,7 +86,7 @@ export default function logisticsPage() {
         >
           <Image
             className="details__img"
-            src="/../public/images/logistics.jpeg"
+            src="/images/logistics.jpeg"
             alt="Trans And Logistics"
             width={1000}
             height={800}

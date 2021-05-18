@@ -85,7 +85,7 @@ export default function WeatherappPage() {
         >
           <Image
             className="details__img"
-            src="/../public/images/weatherapp.jpeg"
+            src="/images/weatherapp.jpeg"
             alt="Weather App"
             width={1000}
             height={800}
