@@ -63,15 +63,22 @@ export default function ChatPage() {
           <div className="details__right">
             <div className="details__right-parag">
               <p>
-                As you might have probably guessed, this is a chat application I built with React and Firebase. It was an enjoyable project to work with as I was using Firebase/Firestore for the first time. I learned a lot while building it.
+                As you might have probably guessed, this is a chat application I
+                built with React and Firebase. It was an enjoyable project to
+                work with as I was using Firebase/Firestore for the first time.
+                I learned a lot while building it.
               </p>
 
               <p>
-                Since Firebase doesn't provide a presence system for online users out of the box - I had to look for a way around it. I implemented a counter for messages which display all active users based on unique users that sent a message.
+                Since Firebase doesn't provide a presence system for online
+                users out of the box - I had to look for a way around it. I
+                implemented a counter for messages which display all active
+                users based on unique users that sent a message.
               </p>
 
               <p>
-                The application also has a registration and authorization system as well as Formik for form validation.
+                The application also has a registration and authorization system
+                as well as Formik for form validation.
               </p>
             </div>
           </div>
@@ -85,7 +92,7 @@ export default function ChatPage() {
         >
           <Image
             className="details__img"
-            src="/../public/images/chatapp.jpeg"
+            src="/public/images/chatapp.jpeg"
             alt="Chat App"
             width={1000}
             height={800}
