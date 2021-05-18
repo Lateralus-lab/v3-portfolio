@@ -26,7 +26,7 @@ const items = [
   },
   {
     itemClass: 'cards__btn-weatherapp',
-    title: 'Weater App',
+    title: 'Weather App',
     subTitle: 'Weather application',
     url: 'weather',
     id: 4,

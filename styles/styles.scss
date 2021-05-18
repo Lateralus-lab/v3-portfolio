@@ -19,6 +19,8 @@ html, body {
     --switch-color: #fff;
     //card
     --card-color: #eaeaea;
+
+    --selection-color: #49a09d;
 }
 
 body {
@@ -50,6 +52,8 @@ body.dark {
     --switch-color: #49a09d;
     //card
     --card-color: #a0a0a0;
+
+    --selection-color: #FF9193;
 }
 
 *,
@@ -95,7 +99,7 @@ section {
 }
 
 ::selection {
-    color: $green-color;
+    color: var(--selection-color);
 }
 
 .container {
