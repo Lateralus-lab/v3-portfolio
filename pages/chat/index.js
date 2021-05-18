@@ -92,7 +92,7 @@ export default function ChatPage() {
         >
           <Image
             className="details__img"
-            src="/public/images/chatapp.jpeg"
+            src="/../public/images/chatapp.jpeg"
             alt="Chat App"
             width={1000}
             height={800}
