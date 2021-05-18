@@ -51,11 +51,6 @@
     justify-content: space-between;
     align-items: center;
     max-width: 130px;
-
-    @media(max-width: $breakpoint_md) {
-        max-width: 100%;
-    }
-
 }
 
 .details__icon-back {

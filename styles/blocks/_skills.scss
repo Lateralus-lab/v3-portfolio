@@ -29,10 +29,6 @@
        @media(max-width: $breakpoint_md) {
            font-size: 1.2rem;
        }
-
-       @media(max-width: $breakpoint_sm) {
-           font-size: .88rem;
-       }
    }
 
    &:not(:first-child):before {
@@ -51,6 +47,8 @@
 
     @media(max-width: $breakpoint_sm) {
         margin-bottom: 8px;
+
+        font-size: .88rem;
 
         &:last-child {
             margin-bottom: 0;
