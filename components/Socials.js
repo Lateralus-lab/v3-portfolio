@@ -16,7 +16,7 @@ const items = [
     id: 2,
   },
   {
-    link: 'mailto:lateraluz46@protonmail.com',
+    link: 'mailto:lateraluz0101@protonmail.com',
     icon: <Mail />,
     id: 3,
   },
