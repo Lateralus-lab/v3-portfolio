@@ -11,12 +11,12 @@ const items = [
     id: 1,
   },
   {
-    link: '#',
+    link: 'https://www.linkedin.com/in/eli-krizevski/',
     icon: <Linkedin />,
     id: 2,
   },
   {
-    link: 'mailto:lateraluz0101@protonmail.com',
+    link: 'mailto:elikrizevski@gmail.com',
     icon: <Mail />,
     id: 3,
   },
