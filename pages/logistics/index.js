@@ -66,7 +66,7 @@ export default function logisticsPage() {
                 Trans & Logistics is a website with multiple pages built with
                 HTML, CSS and JavaScript. I wanted to create a website without
                 any libraries/frameworks and challenge myself to create
-                something nice and mobile responsive.
+                something mobile responsive, and user friendly.
               </p>
 
               <p>

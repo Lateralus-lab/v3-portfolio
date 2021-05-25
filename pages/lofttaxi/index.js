@@ -73,15 +73,17 @@ export default function LofttaxiPage() {
             <div className="details__right-parag">
               <p>
                 LoftTaxi - a taxi booking application I built with React and
-                Redux/Redux Saga. This application uses a foreign API to get
-                route directions as well as MapboxGL to render interactive map.
+                Redux/Redux Saga. This application uses the back-end server
+                created explicitly for authorization, getting a list of
+                addresses and routes for a map. MapboxGL was used to render an
+                interactive map.
               </p>
 
               <p>
                 The application also includes a user authorization/registration
-                system allowing users to sign in with accounts and book a taxi.
-                To style this application, I mostly used SASS and, to save time,
-                some MaterialUI components.
+                system to sign in with accounts and book a taxi and React Hook
+                Form for form validation. To style this application, I mostly
+                used SASS and, to save time, some MaterialUI components.
               </p>
             </div>
           </div>

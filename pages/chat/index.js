@@ -65,15 +65,15 @@ export default function ChatPage() {
               <p>
                 As you might have probably guessed, this is a chat application I
                 built with React and Firebase. It was an enjoyable project to
-                work with as I was using Firebase/Firestore for the first time.
-                I learned a lot while building it.
+                work with as I used Firebase/Firestore for the first time. I
+                learned a lot while building this application.
               </p>
 
               <p>
                 Since Firebase doesn't provide a presence system for online
                 users out of the box - I had to look for a way around it. I
                 implemented a counter for messages which display all active
-                users based on unique users that sent a message.
+                users in the sidebar based on unique users that sent a message.
               </p>
 
               <p>
