@@ -38,6 +38,15 @@ export default function Layout({ title, keywords, description, children }) {
           `,
           }}
         />
+        <noscript>
+          <div>
+            <img
+              src="https://mc.yandex.ru/watch/79493038"
+              style="position:absolute; left:-9999px;"
+              alt=""
+            />
+          </div>
+        </noscript>
       </Head>
 
       <main className="container">{children}</main>
