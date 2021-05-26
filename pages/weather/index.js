@@ -64,13 +64,13 @@ export default function WeatherappPage() {
             <div className="details__right-parag">
               <p>
                 This is a simple weather application I built with HTML/CSS and
-                JavaScript. I used OpenWeatherMap API to get the weather for any
-                city you request.
+                JavaScript. I used OpenWeatherMap API to get the weather data
+                for any city you request.
               </p>
 
               <p>
                 It was one of the first projects I built, and I decided to
-                include it in my portfolio to demonstrate that I'm constantly
+                include it in my portfolio to demonstrate that I'm continually
                 learning and improving.
               </p>
             </div>
