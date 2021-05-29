@@ -32,6 +32,7 @@ export default function Layout({ title, keywords, description, children }) {
 
 Layout.defaultProps = {
   title: 'Eli Krizevski | Web Developer Portfolio',
-  description: 'Web Developer Portfolio',
+  description:
+    "Welcome to my portfolio. My name is Eli Krizevski, and I'm a Front End Web Developer with a strong knowledge of JavaScript(ES6) and React/Redux.",
   keywords: 'Javascript, React, Nextjs, Portfolio, HTML, CSS, Eli, Krizevski',
 };

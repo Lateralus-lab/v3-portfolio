@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Twitter from './svg/twitter';
-import Linkedin from './svg/linkedin';
+import Telegram from './svg/telegram';
+// import Linkedin from './svg/linkedin';
 import Mail from './svg/mail';
 import Github from './svg/github';
 
@@ -11,8 +12,8 @@ const items = [
     id: 1,
   },
   {
-    link: 'https://www.linkedin.com/in/eli-krizevski/',
-    icon: <Linkedin />,
+    link: 'https://t.me/lateraluz0',
+    icon: <Telegram />,
     id: 2,
   },
   {
