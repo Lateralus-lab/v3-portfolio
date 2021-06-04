@@ -63,22 +63,22 @@ export default function ChatPage() {
           <div className="details__right">
             <div className="details__right-parag">
               <p>
-                As you might have probably guessed, this is a chat application I
-                built with React and Firebase. It was an enjoyable project to
-                work with as I used Firebase/Firestore for the first time. I
-                learned a lot while building this application.
+                Mobile responsive real-time chat application. I built the
+                front-end with React, Firebase for the user
+                authorization/registration, and I used Firestore as the back-end
+                for storing users data.
               </p>
 
               <p>
                 Since Firebase doesn't provide a presence system for online
-                users out of the box - I had to look for a way around it. I
-                implemented a counter for messages which display all active
-                users in the sidebar based on unique users that sent a message.
+                users out of the box - I wrote a function that checks messages
+                from all users. If the user has a unique id, it displays the
+                user's information (such as name and avatar) in the sidebar.
               </p>
 
               <p>
-                The application also has a registration and authorization system
-                as well as Formik for form validation.
+                It was a fun project to work with as I learned about
+                Firebase/Firestore while building this application.
               </p>
             </div>
           </div>
