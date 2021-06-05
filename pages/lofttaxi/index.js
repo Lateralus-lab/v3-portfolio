@@ -74,14 +74,6 @@ export default function LofttaxiPage() {
               <p>I built a mobile responsive taxi booking application.</p>
 
               <p>
-<<<<<<< HEAD
-                I built the front-end using React + Redux for the UI and state
-                management, MapboxGL for the interactive map, and Redux-Saga to
-                handle the side effects.
-              </p>
-
-              <p>
-=======
                 LoftsTaxi is a mobile responsive taxi booking application that
                 includes an interactive map that draws a route when the user
                 sets the destination from x to y.
@@ -94,7 +86,6 @@ export default function LofttaxiPage() {
               </p>
 
               <p>
->>>>>>> d65ca140287b358e0a61d184d613cf5c0c503417
                 This application uses the back-end server specifically created
                 for authorization, getting a list of addresses and routes for a
                 map. React Hood Form used for form validation and some
