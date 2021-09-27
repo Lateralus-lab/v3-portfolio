@@ -4,23 +4,20 @@ import Flask from './svg/flask';
 
 const items = [
   {
-    title: 'Reusable Components',
-    text:
-      'A collection of common re-usable components. Created to save time given these components are often always the same.',
-    link: 'https://codepen.io/collection/gYYOMW',
+    title: 'MVC PHP',
+    text: 'I built a mini-blog website with PHP using an Object-Oriented style of programming and MVC architecture pattern.',
+    link: 'https://github.com/Lateralus-lab/mvc-php',
     id: 1,
   },
   {
     title: 'HTML Email',
-    text:
-      'I re-created an HTML Email template from boohooMAN with the MJML framework. The template is mobile responsive and works on popular email clients.',
+    text: 'I re-created an HTML Email template from boohooMAN with the MJML framework. The template is mobile responsive and works on popular email clients.',
     link: 'https://codepen.io/zoofoo/pen/ZEGmNEv',
     id: 2,
   },
   {
     title: 'Widgets',
-    text:
-      'A collection of widgets. These widgets are built with Javascript and can easily be integrated into any project.',
+    text: 'A collection of widgets. These widgets are built with Javascript and can easily be integrated into any project.',
     link: 'https://codepen.io/collection/dbbPPv',
     id: 3,
   },
@@ -35,7 +32,7 @@ export default function Lab() {
         initial={{ opacity: 0, y: 40 }}
       >
         <h2 className="title__item">
-          Exp<span className="multi-color">er</span>imental Lab
+          <span className="multi-color">Noteworthy</span> Projects
         </h2>
       </motion.div>
 

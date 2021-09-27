@@ -48,7 +48,7 @@ export default function Header() {
           </div>
         </motion.div>
         <div className="header__desc">
-          I'm a passionate front-end web developer focused on building beautiful
+          I'm a passionate web developer focused on building beautiful
           interfaces and experiences.
         </div>
       </div>

@@ -46,7 +46,7 @@ export default function Projects() {
         initial={{ opacity: 0, y: 40 }}
       >
         <h2 className="title__item">
-          Some Th<span className="multi-color">in</span>gs I’ve Built
+          <span className="multi-color">Some</span> things I’ve Built
         </h2>
       </motion.div>
 

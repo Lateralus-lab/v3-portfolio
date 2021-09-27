@@ -1,14 +1,14 @@
 export default function Skills() {
-  const languages = ['Languages', 'HTML', 'CSS', 'SASS', 'JavaScript'];
-
-  const frameworks = [
-    'Frameworks',
-    'React',
-    'Redux',
-    'Redux Saga',
-    'Next.js',
-    'Firebase',
+  const languages = [
+    'Languages',
+    'HTML',
+    'CSS/SASS',
+    'JavaScript',
+    'PHP',
+    'MySQL/SQL',
   ];
+
+  const frameworks = ['Frameworks', 'React', 'Redux', 'Redux Saga', 'Next.js'];
 
   const tools = ['Tools', 'Terminal', 'Git', 'Gulp', 'Linux', 'DevTools'];
   const design = ['Design Tools', 'Photoshop', 'Figma', 'XD', 'Avocode'];
