@@ -14,7 +14,7 @@ export default function WeatherappPage() {
   return (
     <Layout>
       <motion.section
-        className="details weatherapp"
+        className="details myburger"
         exit="exit"
         variants={pageAnimation}
         initial="exit"
@@ -34,7 +34,7 @@ export default function WeatherappPage() {
               >
                 <Back />
               </div>
-              <Link href="https://github.com/Lateralus-lab/weather-app">
+              <Link href="https://github.com/Lateralus-lab/myburger">
                 <a target="_blank">
                   <div className="details__icon-back">
                     <DetailsGithub />
@@ -42,36 +42,41 @@ export default function WeatherappPage() {
                 </a>
               </Link>
             </div>
-            <Link href="https://weather-app2203.netlify.app/">
+            <Link href="https://myburger-lp.netlify.app">
               <a className="details__link" target="_blank">
                 <h1 className="details__left-title">
-                  Weather Application
+                  MyBurger - Landing Page
                   <External />
                 </h1>
               </a>
             </Link>
 
             <ul className="stack__list">
-              {['HTML', 'CSS', 'JavaScript', 'API'].map((skill, i) => (
-                <li className="stack__item" key={i}>
-                  {skill}
-                </li>
-              ))}
+              {['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL/SQL'].map(
+                (skill, i) => (
+                  <li className="stack__item" key={i}>
+                    {skill}
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
 
           <div className="details__right">
             <div className="details__right-parag">
-              <p>
-                This is a simple weather application I built with HTML/CSS and
-                JavaScript. I used OpenWeatherMap API to get the weather data
-                for any city you request.
-              </p>
+              <p>MyBurger is a landing page for taking orders online.</p>
 
               <p>
-                It was one of the first projects I built, and I decided to
-                include it in my portfolio to demonstrate that I'm continually
-                learning and improving.
+                I used PHP for the backend and MySQL to store users data. I
+                implemented form validation which checks whether an email is
+                unique. If the entered email has been used before, order count
+                value increments by one in the database -{' '}
+                <Link href="https://github.com/Lateralus-lab/myburger/blob/master/includes/burger_db.sql">
+                  <a className="link" target="_blank">
+                    example
+                  </a>
+                </Link>
+                .
               </p>
             </div>
           </div>
@@ -85,7 +90,7 @@ export default function WeatherappPage() {
         >
           <Image
             className="details__img"
-            src="/images/weatherapp.jpeg"
+            src="/images/myburger.jpeg"
             alt="Weather App"
             width={1000}
             height={800}

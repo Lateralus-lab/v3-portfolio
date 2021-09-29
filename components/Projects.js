@@ -4,10 +4,10 @@ import Dragger from 'react-physics-dragger';
 
 const items = [
   {
-    itemClass: 'cards__btn-chatapp',
-    title: 'Chat App',
-    subTitle: 'Real-time chat application',
-    url: 'chat',
+    itemClass: 'cards__btn-logistics',
+    title: 'Trans & Logistics',
+    subTitle: 'A website with multiple pages',
+    url: 'logistics',
     id: 1,
   },
   {
@@ -18,18 +18,18 @@ const items = [
     id: 2,
   },
   {
-    itemClass: 'cards__btn-logistics',
-    title: 'Trans & Logistics',
-    subTitle: 'A website with multiple pages',
-    url: 'logistics',
-    id: 3,
+    itemClass: 'cards__btn-myburger',
+    title: 'MyBurger',
+    subTitle: 'Well-designed landing page',
+    url: 'myburger',
+    id: 2,
   },
   {
-    itemClass: 'cards__btn-weatherapp',
-    title: 'Weather App',
-    subTitle: 'Weather application',
-    url: 'weather',
-    id: 4,
+    itemClass: 'cards__btn-chatapp',
+    title: 'Chat App',
+    subTitle: 'Real-time chat application',
+    url: 'chat',
+    id: 3,
   },
 ];
 

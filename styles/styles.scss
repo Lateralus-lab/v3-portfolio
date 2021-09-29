@@ -14,7 +14,7 @@ html, body {
     --board-bg: #fff;
     --board-bg-hover: #F8F9FB;
     //multi-color
-    --multi-color: #444425;
+    --multi-color: #444452;
     //switch
     --switch-color: #fff;
     //card
@@ -113,6 +113,16 @@ section {
 
 .multi-color {
     color: var(--multi-color);
+}
+
+.link {
+    color: $primary-color;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 // Blocks

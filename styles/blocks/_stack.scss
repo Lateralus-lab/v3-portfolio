@@ -1,13 +1,14 @@
 .stack__list {
-    display: flex;
-    max-width: 300px;
-    flex-wrap: wrap;
+    max-width: 320px;
+    width: 100%;
 }
 
 .stack__item {
     margin: 0 auto;
     margin-right: 1.5rem;
+    margin-left: 1rem;
     margin-bottom: .4rem;
+    float: left;
     position: relative;
 
     &:last-child {

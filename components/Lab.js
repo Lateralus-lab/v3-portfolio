@@ -5,7 +5,7 @@ import Flask from './svg/flask';
 const items = [
   {
     title: 'MVC PHP',
-    text: 'I built a mini-blog website with PHP using an Object-Oriented style of programming and MVC architecture pattern.',
+    text: 'I built a mini-blog system with PHP using an Object-Oriented paradigm and MVC architecture pattern.',
     link: 'https://github.com/Lateralus-lab/mvc-php',
     id: 1,
   },

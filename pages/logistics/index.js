@@ -34,7 +34,7 @@ export default function logisticsPage() {
               >
                 <Back />
               </div>
-              <Link href="https://github.com/Lateralus-lab/CenterLogistic-landing-website">
+              <Link href="https://github.com/Lateralus-lab/logistic">
                 <a target="_blank">
                   <div className="details__icon-back">
                     <DetailsGithub />
@@ -52,7 +52,7 @@ export default function logisticsPage() {
             </Link>
 
             <ul className="stack__list">
-              {['HTML', 'CSS', 'BEM', 'JavaScript'].map((skill, i) => (
+              {['HTML', 'CSS', 'jQuery', 'PHP', 'MySQL'].map((skill, i) => (
                 <li className="stack__item" key={i}>
                   {skill}
                 </li>
@@ -64,15 +64,19 @@ export default function logisticsPage() {
             <div className="details__right-parag">
               <p>
                 Trans & Logistics is a website with multiple pages built with
-                HTML, CSS and JavaScript. I wanted to create a website without
-                any libraries/frameworks and challenge myself to create
-                something mobile responsive, and user friendly.
+                HTML, CSS and jQuery. For the backend, I used PHP with MySQL
+                database for storing data such as name, phone number and email -{' '}
+                <Link href="https://github.com/Lateralus-lab/logistic/blob/master/src/logistic.sql">
+                  <a className="link" target="_blank">
+                    example
+                  </a>
+                </Link>
+                .
               </p>
 
               <p>
-                I also want to mention that I used the BEM methodology for
-                naming CSS classes which resulted in clean and pleasant to read
-                HTML/CSS code.
+                BEM methodology was used for naming CSS classes to write
+                reusable code.
               </p>
             </div>
           </div>
