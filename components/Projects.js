@@ -5,7 +5,7 @@ import Dragger from 'react-physics-dragger';
 const items = [
   {
     itemClass: 'cards__btn-logistics',
-    title: 'Trans & Logistics',
+    title: 'Trans & Logistic',
     subTitle: 'A website with multiple pages',
     url: 'logistics',
     id: 1,

@@ -45,7 +45,7 @@ export default function logisticsPage() {
             <Link href="https://center-logistics.netlify.app/">
               <a className="details__link" target="_blank">
                 <h1 className="details__left-title">
-                  A website with multiple pages - Trans &amp; Logistics
+                  A website with multiple pages - Trans &amp; Logistic
                   <External />
                 </h1>
               </a>
@@ -63,7 +63,7 @@ export default function logisticsPage() {
           <div className="details__right">
             <div className="details__right-parag">
               <p>
-                Trans & Logistics is a website with multiple pages built with
+                Trans & Logistic is a website with multiple pages built with
                 HTML, CSS and jQuery. For the backend, I used PHP with MySQL
                 database for storing data such as name, phone number and email -{' '}
                 <Link href="https://github.com/Lateralus-lab/logistic/blob/master/src/logistic.sql">
