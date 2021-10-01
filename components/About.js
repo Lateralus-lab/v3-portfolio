@@ -17,10 +17,10 @@ export default function About() {
       <div className="about__wrapper">
         <div className="about__item">
           <p className="about__item-parag">
-            I'm a passionate self-taught web developer with a large variety of
-            skills. The important ones are React.js, PHP and MySQL. I have a lot
-            of experience and knowledge creating REST API's and their validation
-            to building complex front-ends that handle data.
+            A passionate Full-Stack Web Developer with 1+ years of experience in
+            structuring, developing and implementing interactive websites. Able
+            to complete projects efficiently and satisfy customers with
+            attractive, user-friendly websites.
           </p>
 
           <p className="about__item-parag">
