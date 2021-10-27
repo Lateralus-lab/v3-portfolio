@@ -17,7 +17,7 @@ export default function About() {
       <div className="about__wrapper">
         <div className="about__item">
           <p className="about__item-parag">
-            A passionate Full-Stack Web Developer with 1+ years of experience in
+            A passionate Front-End Web Developer with 1+ years of experience in
             structuring, developing and implementing interactive websites. Able
             to complete projects efficiently and satisfy customers with
             attractive, user-friendly websites.
